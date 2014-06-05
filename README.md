@@ -7,7 +7,7 @@ an Oracle Certified Associate Java SE7 Programmer.
 Until now, this is a non-glitter/non-frills app that contains a list of 100+ real exam questions 
 touching every topic of the exam.
 
-I´m opening the code up, since there is evident space for improvementes.
+I´m opening the code up, since there is evident space for improvements.
 
 These are some of the areas in which I think this app can be improved:
 
