@@ -1,0 +1,60 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+  <LinearLayout  android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Questao64" />
+    
+        <CheckBox android:id="@+id/checkbox_questao64A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao64A"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao64B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao64B"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao64C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao64C"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao64D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao64D"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao64E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao64E"
+        />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/botaoQuestao"
+        android:onClick="abrirResposta"/>
+    
+    <TextView
+        android:id="@+id/RespostaQuestao64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RespostaQuestao64"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
+</ScrollView>

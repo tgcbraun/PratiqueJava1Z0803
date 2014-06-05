@@ -1,0 +1,3075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Practice Java</string>
+    <string name="action_settings">Settings</string>
+    <string name="inicio">Hello! This is an application that contains a database of questions similar to the ones from Oracle´s 1Z0-803 Exam.\n
+   </string>
+    <string name="botao">Get Question</string>
+    <string name="toastRespostaCerta">Your Answer is correct!</string>
+    <string name="toastRespostaErrada">Your answer is incorrect.</string>
+    <string name="title_activity_questao1">Question 1</string>
+    <string name="title_activity_questao2">Question 2</string>
+    <string name="Questao1"> Given:\n
+        \n
+	1. // insert code here\n
+	2. class StatTest {\n
+	3. public static void main(String[] args) {\n
+	4. System.out.println(Integer.MAX_VALUE);\n
+	5. }\n
+	6. }\n
+	\n
+Which, inserted independently at line 1, compiles? (Choose all that apply.)</string>
+    <string name="questao1A">A. import static java.lang;</string>
+    <string name="questao1B">B. import static java.lang.Integer;</string>
+    <string name="questao1C">C. import static java.lang.Integer.*;</string>
+    <string name="questao1D">D. import static java.lang.Integer.*_VALUE;</string>
+    <string name="questao1E">E. import static java.lang.Integer.MAX_VALUE;</string>
+    <string name="questao1F">F. None of the above statements are valid import syntax</string>
+    <string name="RespostaQuestao1">Answer:\n
+        \n
+    C and E are correct syntax for static imports. Line 4 is not making use of static imports,
+    so the code will also compile with none of the imports.\n
+    \n
+    A, B, D, and F are incorrect based on the above.</string>
+    <string name="Questao2">Given:\n
+        \n
+	import static java.lang.System.*;\n
+	class _ {\n
+	static public void main(String... __A_V_) {\n
+	String $ = "";\n
+	for(int x=0; ++x "less than" __A_V_.length; )\n
+	$ += __A_V_[x];\n
+	out.println($);\n
+	}\n
+	}\n
+	\n
+	And the command line:\n
+	\n
+	java _ - A .\n
+	\n
+	What is the result? \n</string>
+    <string name="questao2A">A. -A</string>
+    <string name="questao2B">B. A.</string>
+    <string name="questao2C">C. -A.</string>
+    <string name="questao2D">D. _A.</string>
+    <string name="questao2E">E. _-A</string>
+    <string name="questao2F">F. Compilation fails</string>
+    <string name="questao2G">G. An exception is thrown at runtime</string>
+    <string name="botaoQuestao">Check Answers!</string>
+    <string name="RespostaQuestao2">Answer:\n
+        \n
+    B is correct. This question is using valid (but inappropriate and weird) identifiers, static
+    imports, var-args in main(), and pre-incrementing logic..\n
+    \n
+    A, B, D, F and G are incorrect based on the above.</string>
+    <string name="botaoProximaQuestao">Next Question</string>
+    <string name="title_activity_questao3">Question 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Questao3">Given the default classpath:\n
+        \n
+        /foo
+         \n
+         \n
+	And this directory structure:
+	\n
+	\n
+	foo\n
+&#160;&#160;&#160;|\n
+&#160;&#160;&#160;test\n
+&#160;&#160;&#160;&#160;&#160;&#160;|\n
+&#160;&#160;&#160;&#160;&#160;&#160;xcom\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|--A.class\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|--B.java\n
+	\n
+	\n
+	And these two files:
+	\n
+	\n
+	package xcom;
+	public class A { }
+	\n
+	\n
+	package xcom;
+	public class B extends A { }
+	\n
+	\n
+	Which allows B.java to compile? (Choose all that apply.)?\n</string>
+    <string name="questao3A">A. Set the current directory to xcom then invoke
+javac B.java</string>
+    <string name="questao3B">B. Set the current directory to xcom then invoke
+javac -classpath . B.java</string>
+    <string name="questao3C">C. Set the current directory to test then invoke
+javac -classpath . xcom/B.java</string>
+    <string name="questao3D">D. Set the current directory to test then invoke
+javac -classpath xcom B.java</string>
+    <string name="questao3E">E. Set the current directory to test then invoke
+javac -classpath xcom:. B.java</string>
+    <string name="RespostaQuestao3">Answer:\n
+        \n
+    C is correct. In order for B.java to compile, the compiler first needs to be able to find
+B.java. Once it\´s found B.java it needs to find A.class. Because A.class is in the
+xcom package the compiler wont find A.class if it is invoked from the xcom directory.
+Remember that the -classpath is not looking for B.java, it is looking for whatever classes
+B.java needs (in this case A.class).\n
+    \n
+    A, B, and D are incorrect based on the above. E is incorrect because the compiler cannot
+find B.java.</string>
+    <string name="title_activity_questao4">Question 04</string>
+    <string name="Questao4">        Given two files:
+        \n
+        \n
+		a=b.java
+		\n
+		c_d.class
+		\n
+		\n
+		Are in the current directory, which command-line invocation(s) could complete without error?
+		(Choose all that apply.)</string>
+    <string name="questao4A">A. java -Da=b c_d</string>
+    <string name="questao4B">B. java -D a=b c_d</string>
+    <string name="questao4C">C. javac -Da=b c_d</string>
+    <string name="questao4D">D. javac -D a=b c_d</string>
+    <string name="RespostaQuestao4">Answer:\n
+        \n
+    A is correct. The -D flag is NOT a compiler flag, and the name=value pair that is
+associated with the -D must follow the -D with no spaces.\n
+    \n
+    B, C, and D are incorrect based on the above.</string>
+    <string name="Questao5">If three versions of MyClass.class exist on a file system:\n
+        \n
+        Version 1 is in /foo/bar
+        \n
+		Version 2 is in /foo/bar/baz
+		\n
+		Version 3 is in /foo/bar/baz/bing
+		\n
+		\n
+		And the system\'s classpath includes
+		\n
+		\n
+		/foo/bar/baz
+		\n
+		\n
+		And this command line is invoked from /foo
+		\n
+		\n
+		java -classpath /foo/bar/baz/bing:/foo/bar MyClass
+		\n
+		\n
+		Which version will be used by java?</string>
+    <string name="questao5A">A. /foo/MyClass.class</string>
+    <string name="questao5B">B. /foo/bar/MyClass.class</string>
+    <string name="questao5C">C. /foo/bar/baz/MyClass.class</string>
+    <string name="questao5D">D. /foo/bar/baz/bing/MyClass.class</string>
+    <string name="questao5E">E. The result is not predictable.</string>
+    <string name="RespostaQuestao5">Answer:\n
+        \n
+    D is correct. A -classpath included with a java invocation overrides a system classpath.
+When java is using any classpath, it reads the classpath from left to right, and uses the
+first match it finds.\n
+    \n
+    A, B, C, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao6">Questao6</string>
+    <string name="Questao6">Given two files:\n
+        \n
+        1. package pkgA;
+		2. public class Foo {
+		3. int a = 5;
+		4. protected int b = 6;
+		5. }\n
+		\n
+		1. package pkgB;
+		2. import pkgA.*;
+		3. public class Fiz extends Foo {
+		4. public static void main(String[] args) {
+		5. Foo f = new Foo();
+		6. System.out.print(" " + f.a);
+		7. System.out.print(" " + f.b);
+		8. System.out.print(" " + new Fiz().a);
+		9. System.out.println(" " + new Fiz().b);
+		10. }
+		11. }\n
+		\n
+What is the result? (Choose all that apply).</string>
+    <string name="questao6A">A. 5 6 5 6</string>
+    <string name="questao6B">B. 5 6 followed by an exception</string>
+    <string name="questao6C">C. Compilation fails with an error on line 6</string>
+    <string name="questao6D">D. Compilation fails with an error on line 7</string>
+    <string name="questao6E">E. Compilation fails with an error on line 8</string>
+    <string name="questao6F">F. Compilation fails with an error on line 9</string>
+    <string name="RespostaQuestao6">Answer:\n
+        \n
+   C, D, and E are correct. Variable a (default access) cannot be accessed from outside the
+package. Since variable b is protected, it can be accessed only through inheritance.\n
+    \n
+    A, B, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao7">Question 7</string>
+    <string name="Questao7">Given:\n
+        \n
+        3. import java.util.*;\n
+		4. public class Antique {\n
+		5. public static void main(String[] args) {\n
+		6. List <![CDATA[<String>]] myList = new ArrayList <String>()]]>;\n
+		7. assert (args.length > 0);\n
+		8. System.out.println("still static");\n
+		9. }\n
+		10. }\n
+		\n
+		Which sets of commands (javac followed by java) will compile and run without exception or
+		error? (Choose all that apply.)</string>
+    <string name="questao7A">A. javac Antique.java\n
+	java Antique</string>
+    <string name="questao7B">B. javac Antique.java\n
+java -ea Antique</string>
+    <string name="questao7C">C. javac -source 6 Antique.java\n
+java Antique</string>
+    <string name="questao7D">D. javac -source 1.4 Antique.java\n
+java Antique</string>
+    <string name="questao7E">E. javac -source 1.6 Antique.java\n
+java -ea Antique</string>
+    <string name="RespostaQuestao7">Answer:\n
+        \n
+   A and C are correct. If assertions (which were first available in Java 1.4) are enabled, an
+AssertionError will be thrown at line 7.\n
+    \n
+    D is incorrect because the code uses generics, and generics weren\'t introduced until Java 5.
+B and E are incorrect based on the above.</string>
+    <string name="title_activity_questao8">Question 8</string>
+    <string name="Questao8">Given:\n
+        \n
+        3. import java.util.*;\n
+4. public class Values {\n
+5. public static void main(String[] args) {\n
+6. Properties p = System.getProperties();\n
+7. p.setProperty("myProp", "myValue");\n
+8. System.out.print(p.getProperty("cmdProp") + " ");\n
+9. System.out.print(p.getProperty("myProp") + " ");\n
+10. System.out.print(p.getProperty("noProp") + " ");\n
+11. p.setProperty("cmdProp", "newValue");\n
+12. System.out.println(p.getProperty("cmdProp"));\n
+13. }\n
+14. }\n
+		\n
+		And given the command line invocation:\n
+java -DcmdProp=cmdValue Values\n
+\n
+What is the result?</string>
+    <string name="questao8A">A. null myValue null null</string>
+    <string name="questao8B">B. cmdValue null null cmdValue</string>
+    <string name="questao8C">C. cmdValue null null newValue</string>
+    <string name="questao8D">D. cmdValue myValue null cmdValue</string>
+    <string name="questao8E">E. cmdValue myValue null newValue</string>
+    <string name="questao8F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao8">Answer:\n
+        \n
+   E is correct. System properties can be set at the command line, as indicated correctly in
+the example. System properties can also be set and overridden programmatically.\n
+    \n
+    A, B, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao9">Question 9</string>
+    <string name="Questao9">Given the following directory structure:\n
+        \n
+       
+       x-|\n
+&#160;&#160;&#160;|- FindBaz.class\n
+&#160;&#160;&#160;|\n
+&#160;&#160;&#160;|- test-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Baz.class\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- myApp-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Baz.class
+       \n
+		\n
+		And given the contents of the related .java files:\n
+		\n
+1. public class FindBaz {
+2. public static void main(String[] args) { new Baz(); }
+3. }\n
+\n
+In the test directory:\n
+\n
+1. public class Baz {
+2. static { System.out.println("test/Baz"); }
+3. }\n
+\n
+In the myApp directory:\n
+\n
+1. public class Baz {
+2. static { System.out.println("myApp/Baz"); }
+3. }\n
+\n
+If the current directory is x, which invocations will produce the output "test/Baz"? (Choose
+all that apply.)</string>
+    <string name="questao9A">A. java FindBaz</string>
+    <string name="questao9B">B. java -classpath test FindBaz</string>
+    <string name="questao9C">C. java -classpath .:test FindBaz</string>
+    <string name="questao9D">D. java -classpath .:test/myApp FindBaz</string>
+    <string name="questao9E">E. java -classpath test:test/myApp FindBaz</string>
+    <string name="questao9F">F. java -classpath test:test/myApp:. FindBaz</string>
+    <string name="questao9G">G. java -classpath test/myApp:test:. FindBaz</string>
+    <string name="RespostaQuestao9">Answer:\n
+        \n
+  C and F are correct. The java command must find both FindBaz and the version of
+Baz located in the test directory. The "." finds FindBaz, and "test" must come before
+"test/myApp" or java will find the other version of Baz. Remember the real exam will
+default to using the Unix path separator.\n
+    \n
+    A, B, D, E, e G are incorrect based on the above.</string>
+    <string name="title_activity_questao10">Question 10</string>
+    <string name="Questao10">Given the following directory structure:\n
+        \n
+       
+       test-|\n
+&#160;&#160;&#160;|- Test.java\n
+&#160;&#160;&#160;|\n
+&#160;&#160;&#160;|- myApp-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Foo.java\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- myAppSub-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Bar.java
+       \n
+		\n
+		If the current directory is test, and you create a .jar file by invoking this,:\n
+		\n
+jar -cf MyJar.jar myApp\n
+\n
+then which path names will find a file in the .jar file? (Choose all that apply.)</string>
+    <string name="questao10A">A. Foo.java</string>
+    <string name="questao10B">B. Test.java</string>
+    <string name="questao10C">C. myApp/Foo.java</string>
+    <string name="questao10D">D. myApp/Bar.java</string>
+    <string name="questao10E">E. META-INF/Foo.java</string>
+    <string name="questao10F">F. META-INF/myApp/Foo.java</string>
+    <string name="questao10G">G. myApp/myAppSub/Bar.java</string>
+    <string name="RespostaQuestao10">Answer:\n
+        \n
+  C and G are correct. The files in a .jar file will exist within the same exact directory tree
+structure in which they existed when the .jar was created. Although a .jar file will contain
+a META-INF directory, none of your files will be in it. Finally, if any files exist in the
+directory from which the jar command was invoked, they won’t be included in the
+.jar file by default.\n
+    \n
+    A, B, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao11">Question 11</string>
+    <string name="Questao11">Given the following directory structure:\n
+        \n
+       
+       test-|\n
+&#160;&#160;&#160;|- GetJar.java\n
+&#160;&#160;&#160;|\n
+&#160;&#160;&#160;|- myApp-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Foo.java\n
+
+		\n
+		And given the contents of GetJar.java and Foo.java:\n
+		\n
+3. public class GetJar {\n
+4. public static void main(String[] args) {\n
+5. System.out.println(myApp.Foo.d);\n
+6. }\n
+7. }\n
+\n
+3. package myApp;\n
+4. public class Foo { public static int d = 8; }\n
+\n
+If the current directory is "test", and myApp/Foo.class is placed in a JAR file called MyJar.jar
+located in test, which set(s) of commands will compile GetJar.java and produce the output 8?
+(Choose all that apply.)</string>
+    <string name="questao11A">A. javac -classpath MyJar.jar GetJar.java\n
+java GetJar</string>
+    <string name="questao11B">B. javac MyJar.jar GetJar.java\n
+java GetJar</string>
+    <string name="questao11C">C. javac -classpath MyJar.jar GetJar.java\n
+java -classpath MyJar.jar GetJar</string>
+    <string name="questao11D">D. javac MyJar.jar GetJar.java\n
+java -classpath MyJar.jar GetJar</string>
+    <string name="RespostaQuestao11">Answer:\n
+        \n
+ A is correct. Given the current directory and where the necessary files are located, these
+are the correct command line statements.\n
+    \n
+    B and D are wrong because javac MyJar.jar GetJar.java is incorrect syntax. C is wrong
+because the -classpath MyJar.java in the java invocation does not include the test directory.</string>
+    <string name="title_activity_questao12">Question 12</string>
+    <string name="Questao12">Given the following directory structure:\n
+        \n
+       
+       x-|\n
+&#160;&#160;&#160;|- GoDeep.class\n
+&#160;&#160;&#160;|\n
+&#160;&#160;&#160;|- test-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- MyJar.jar\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- myApp-|\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Foo.java\n
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|- Foo.class\n
+       
+		\n
+		And given the contents of GoDeep.java and Foo.java:\n
+		\n
+3. public class GoDeep {\n
+4. public static void main(String[] args) {\n
+5. System.out.println(myApp.Foo.d);\n
+6. }\n
+7. }\n
+\n
+3. package myApp;\n
+4. public class Foo { public static int d = 8; }\n
+\n
+And MyJar.jar contains the following entry:\n
+\n
+myApp/Foo.class\n
+\n
+If the current directory is x, which commands will successfully execute GoDeep.class and
+produce the output 8? (Choose all that apply.)</string>
+    <string name="questao12A">A. java GoDeep</string>
+    <string name="questao12B">B. java -classpath . GoDeep</string>
+    <string name="questao12C">C. java -classpath test/MyJar.jar GoDeep</string>
+    <string name="questao12D">D. java GoDeep -classpath test/MyJar.jar</string>
+    <string name="questao12E">E. java GoDeep -classpath test/MyJar.jar:.</string>
+    <string name="questao12F">F. java -classpath .:test/MyJar.jar GoDeep</string>
+    <string name="questao12G">G. java -classpath test/MyJar.jar:. GoDeep</string>
+    <string name="RespostaQuestao12">Answer:\n
+        \n
+  F and G are correct. The java command must find both GoDeep and Foo, and the
+-classpath option must come before the class name. Note, the current directory
+(.), in the classpath can be searched first or last.\n
+    \n
+    A, B, C, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao13">Question 13</string>
+    <string name="Questao13">Which is true? (Choose all that apply.)\n</string>
+    <string name="questao13A">A. "X extends Y" is correct if and only if X is a class and Y is an interface</string>
+    <string name="questao13B">B. "X extends Y" is correct if and only if X is an interface and Y is a class</string>
+    <string name="questao13C">C. "X extends Y" is correct if X and Y are either both classes or both interfaces</string>
+    <string name="questao13D">D. "X extends Y" is correct for all combinations of X and Y being classes and/or interfaces</string>
+    <string name="RespostaQuestao13">Answer:\n
+        \n
+   C is correct.\n
+    \n
+    A is incorrect because classes implement interfaces, they don\'t extend them. B is incorrect
+because interfaces only "inherit from" other interfaces. D is incorrect based on the
+preceding rules.</string>
+    <string name="title_activity_questao14">Question 14</string>
+    <string name="Questao14">Which method names follow the JavaBeans standard? (Choose all that apply.)\n</string>
+    <string name="questao14A">A. addSize</string>
+    <string name="questao14B">B. getCust</string>
+    <string name="questao14C">C. deleteRep</string>
+    <string name="questao14D">D. isColorado</string>
+    <string name="questao14E">E. putDimensions</string>
+    <string name="RespostaQuestao14">Answer:\n
+        \n
+   B and D use the valid prefixes \'get\' and \'is\'..\n
+    \n
+   A is incorrect because \'add\' can be used only with Listener methods. C and E are
+incorrect because \'delete\' and \'put\' are not standard JavaBeans name prefixes</string>
+    <string name="title_activity_questao15">Question 15</string>
+    <string name="Questao15">Given:\n
+        \n
+        1. class Voop {\n
+		2. public static void main(String[] args) {\n
+		3. doStuff(1);\n
+		4. doStuff(1,2);\n
+		5. }\n
+		6. // insert code here\n
+		7. }\n
+		\n
+        Which, inserted independently at line 6, will compile? (Choose all that apply.)\n</string>
+    <string name="questao15A">A. static void doStuff(int&#8230; doArgs) { }</string>
+    <string name="questao15B">B. static void doStuff(int[] doArgs) { }</string>
+    <string name="questao15C">C. static void doStuff(int doArgs&#8230;) { }</string>
+    <string name="questao15D">D. static void doStuff(int&#8230; doArgs, int y) { }</string>
+    <string name="questao15E">E. static void doStuff(int x, int&#8230; doArgs) { }</string>
+    <string name="RespostaQuestao15">Answer:\n
+        \n
+   A and E use valid var-args syntax.\n
+    \n
+   B and C are invalid var-arg syntax, and D is invalid because the var-arg must be the last
+of a method\'s arguments.</string>
+    <string name="title_activity_question16">Question16</string>
+    <string name="Questao16">Given:\n
+        \n
+        1. enum Animals {\n
+2. DOG("woof"), CAT("meow"), FISH("burble");\n
+3. String sound;\n
+4. Animals(String s) { sound = s; }\n
+5. }\n
+6. class TestEnum {\n
+7. static Animals a;\n
+8. public static void main(String [] args) {\n
+9. System.out.println(a.DOG.sound + " " + a.FISH.sound);\n
+10. }\n
+11. }\n
+\n
+What is the result?\n</string>
+    <string name="questao16A">A. woof burble</string>
+    <string name="questao16B">B. Multiple compilation errors</string>
+    <string name="questao16C">C. Compilation fails due to an error on line 2</string>
+    <string name="questao16D">D. Compilation fails due to an error on line 3</string>
+    <string name="questao16E">E. Compilation fails due to an error on line 4</string>
+    <string name="questao16F">F. Compilation fails due to an error on line 9</string>
+    <string name="RespostaQuestao16">Answer:\n
+        \n
+   A is correct; enums can have constructors and variables.\n
+    \n
+   B, C, D, E, and F are incorrect; these lines all use correct syntax.</string>
+    <string name="title_activity_questao17">Question 17</string>
+    <string name="Questao17">Given two files:\n
+        \n
+        
+1. package pkgA;\n
+2. public class Foo {\n
+3. int a = 5;\n
+4. protected int b = 6;\n
+5. public int c = 7;\n
+6. }\n
+\n
+3. package pkgB;\n
+4. import pkgA.*;\n
+5. public class Baz {\n
+6. public static void main(String[] args) {\n
+7. Foo f = new Foo();\n
+8. System.out.print(" " + f.a);\n
+9. System.out.print(" " + f.b);\n
+10. System.out.print(" " + f.c);\n
+11. }\n
+12. }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao17A">A. 5 6 7</string>
+    <string name="questao17B">B. 5 followed by an exception</string>
+    <string name="questao17C">C. Compilation fails with an error on line 7</string>
+    <string name="questao17D">D. Compilation fails with an error on line 8</string>
+    <string name="questao17E">E. Compilation fails with an error on line 9</string>
+    <string name="questao17F">F. Compilation fails with an error on line 10</string>
+    <string name="RespostaQuestao17">Answer:\n
+        \n
+   D and E are correct. Variable a has default access, so it cannot be accessed from outside the
+package. Variable b has protected access in pkgA.\n
+    \n
+   A, B, C, and F are incorrect based on the above information.</string>
+    <string name="title_activity_question18">Questao 18</string>
+    <string name="Questao18">Given:\n
+        \n
+1. public class Electronic implements Device
+{ public void doIt() { } }\n
+2.\n
+3. abstract class Phone1 extends Electronic { }\n
+4.\n
+5. abstract class Phone2 extends Electronic
+{ public void doIt(int x) { } }\n
+6.\n
+7. class Phone3 extends Electronic implements Device
+{ public void doStuff() { } }\n
+8.\n
+9. interface Device { public void doIt(); }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao18A">A. Compilation succeeds</string>
+    <string name="questao18B">B. Compilation fails with an error on line 1</string>
+    <string name="questao18C">C. Compilation fails with an error on line 3</string>
+    <string name="questao18D">D. Compilation fails with an error on line 4</string>
+    <string name="questao18E">E. Compilation fails with an error on line 7</string>
+    <string name="questao18F">F. Compilation fails with an error on line 9</string>
+    <string name="RespostaQuestao18">Answer:\n
+        \n
+   A is correct; all of these are legal declarations.\n
+    \n
+   B, C, D, E, and F are incorrect based on the above information.</string>
+    <string name="title_activity_questao19">Question 19</string>
+    <string name="Questao19">Given:\n
+        \n
+4. class Announce {\n
+5. public static void main(String[] args) {\n
+6. for<![CDATA[(int __x = 0; __x < 3; __x++)]]> ;\n
+7. int #lb = 7;\n
+8. long [] x [5];\n
+9. Boolean []ba[];\n
+10. enum Traffic { RED, YELLOW, GREEN };\n
+11. }\n
+12. }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao19A">A. Compilation succeeds</string>
+    <string name="questao19B">B. Compilation fails with an error on line 6</string>
+    <string name="questao19C">C. Compilation fails with an error on line 7</string>
+    <string name="questao19D">D. Compilation fails with an error on line 8</string>
+    <string name="questao19E">E. Compilation fails with an error on line 9</string>
+    <string name="questao19F">F. Compilation fails with an error on line 10</string>
+    <string name="RespostaQuestao19">Answer:\n
+        \n
+   C, D, and F are correct. Variable names cannot begin with a #, an array declaration can/’t
+include a size without an instantiation, and enums can/’t be declared within a method.\n
+    \n
+   A, B, and E are incorrect based on the above information.</string>
+    <string name="title_activity_questao20">Question 20</string>
+    <string name="Questao20">Given:\n
+        \n
+3. public class TestDays {\n
+4. public enum Days { MON, TUE, WED };\n
+5. public static void main(String[] args) {\n
+6. for(Days d : Days.values() )\n
+7. ;\n
+8. Days [] d2 = Days.values();\n
+9. System.out.println(d2[2]);\n
+10. }\n
+11. }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao20A">A. TUE</string>
+    <string name="questao20B">B. WED</string>
+    <string name="questao20C">C. The output is unpredictable</string>
+    <string name="questao20D">D. Compilation fails with an error on line 4</string>
+    <string name="questao20E">E. Compilation fails with an error on line 5</string>
+    <string name="questao20F">F. Compilation fails with an error on line 8</string>
+    <string name="questao20G">G. Compilation fails with an error on line 9</string>
+    <string name="RespostaQuestao20">Answer:\n
+        \n
+   B is correct. Every enum comes with a static values() method that returns an array
+of the enum\'s values, in the order in which they are declared in the enum.\n
+    \n
+   A, C, D, E, F, and G are incorrect based on the above information.</string>
+    <string name="title_activity_questao21">Question 21</string>
+    <string name="Questao21">Given:\n
+        \n
+4. public class Frodo extends Hobbit {\n
+5. public static void main(String[] args) {\n
+6. Short myGold = 7;\n
+7. System.out.println(countGold(myGold, 6));\n
+8. }\n
+9. }\n
+10. class Hobbit {\n
+11. int countGold(int x, int y) { return x + y; }\n
+12. }\n
+\n
+What is the result?\n</string>
+    <string name="questao21A">A. 13</string>
+    <string name="questao21B">B. Compilation fails due to multiple errors</string>
+    <string name="questao21C">C. Compilation fails due to an error on line 6</string>
+    <string name="questao21D">D. Compilation fails due to an error on line 7</string>
+    <string name="questao21E">E. Compilation fails due to an error on line 11</string>
+    <string name="RespostaQuestao21">Answer:\n
+        \n
+   D is correct. The Short myGold is autoboxed correctly, but the countGold() method
+cannot be invoked from a static context.\n
+    \n
+  A, B, C, and E are incorrect based on the above information.</string>
+    <string name="title_activity_questao22">Question 22</string>
+    <string name="Questao22">Given:\n
+        \n
+public abstract interface Frobnicate { public void twiddle(String s); }
+\n
+Which is a correct class? (Choose all that apply.)\n</string>
+    <string name="questao22A">A. public abstract class Frob implements Frobnicate {\n
+public abstract void twiddle(String s) {\n
+ }
+}</string>
+    <string name="questao22B">B. public abstract class Frob implements Frobnicate { }</string>
+    <string name="questao22C">C. public class Frob extends Frobnicate {\n
+public void twiddle(Integer i) { }\n
+}</string>
+    <string name="questao22D">D. public class Frob implements Frobnicate {\n
+public void twiddle(Integer i) { }\n
+}</string>
+    <string name="questao22E">E. public class Frob implements Frobnicate {\n
+public void twiddle(String i) { }\n
+public void twiddle(Integer s) { }\n
+}</string>
+    <string name="RespostaQuestao22">Answer:\n
+        \n
+  B is correct, an abstract class need not implement any or all of an interface’s methods.
+E is correct, the class implements the interface method and additionally overloads the
+twiddle() method.\n
+    \n
+  A is incorrect because abstract methods have no body. C is incorrect because classes
+implement interfaces they don’t extend them. D is incorrect because overloading a
+method is not implementing it.</string>
+    <string name="title_activity_questao23">Question 23</string>
+    <string name="Questao23">Given:\n
+        \n
+class Top {\n
+public Top(String s) { System.out.print("B"); }\n
+}\n
+public class Bottom2 extends Top {\n
+public Bottom2(String s) { System.out.print("D"); }\n
+public static void main(String [] args) {\n
+new Bottom2("C");\n
+System.out.println(" ");\n
+} }\n
+\n
+What is the result?\n</string>
+    <string name="questao23A">A. BD</string>
+    <string name="questao23B">B. DB</string>
+    <string name="questao23C">C. BDC</string>
+    <string name="questao23D">D. DBC</string>
+    <string name="questao23E">E. Compilation fails.</string>
+    <string name="RespostaQuestao23">Answer:\n
+        \n
+   E is correct. The implied super() call in Bottom2’s constructor cannot be satisfied because
+there isn’t a no-arg constructor in Top. A default, no-arg constructor is generated by the
+compiler only if the class has no constructor defined explicitly.\n
+    \n
+  A, B, C, and D are incorrect based on the above.</string>
+    <string name="title_activity_questao24">Question 24</string>
+    <string name="Questao24">Given:\n
+        \n
+class Clidder {\n
+private final void flipper() { System.out.println("Clidder"); }\n
+}\n
+public class Clidlet extends Clidder {\n
+public final void flipper() { System.out.println("Clidlet"); }\n
+public static void main(String [] args) {\n
+new Clidlet().flipper();\n
+} }\n
+\n
+What is the result?\n</string>
+    <string name="questao24A">A. Clidlet</string>
+    <string name="questao24B">B. Clidder</string>
+    <string name="questao24C">C. Clidder\n
+Clidlet</string>
+    <string name="questao24D">D. Clidlet\n
+Clidder</string>
+    <string name="questao24E">E. Compilation fails.</string>
+    <string name="RespostaQuestao24">Answer:\n
+        \n
+   A is correct. Although a final method cannot be overridden, in this case, the method
+is private, and therefore hidden. The effect is that a new, accessible, method flipper is
+created. Therefore, no polymorphism occurs in this example, the method invoked is simply
+that of the child class, and no error occurs.\n
+    \n
+  B, C, D, and E are incorrect based on the preceding.</string>
+    <string name="title_activity_questao25">Question 25</string>
+    <string name="Questao25">Which statement(s) are true? (Choose all that apply.):\n</string>
+    <string name="questao25A">A. Cohesion is the OO principle most closely associated with hiding implementation details</string>
+    <string name="questao25B">B. Cohesion is the OO principle most closely associated with making sure that classes know
+about other classes only through their APIs</string>
+    <string name="questao25C">C. Cohesion is the OO principle most closely associated with making sure that a class is
+designed with a single, well-focused purpose</string>
+    <string name="questao25D">D. Cohesion is the OO principle most closely associated with allowing a single object to be
+seen as having many types</string>
+    <string name="RespostaQuestao25">Answer:\n
+        \n
+  Answer C is correct.\n
+    \n
+  A refers to encapsulation, B refers to coupling, and D refers to polymorphism.</string>
+    <string name="title_activity_questao26">Question26</string>
+    <string name="Questao26">Given:\n
+        \n
+1. class X { void do1() { } }\n
+2. class Y extends X { void do2() { } }\n
+3.\n
+4. class Chrome {\n
+5. public static void main(String [] args) {\n
+6. X x1 = new X();\n
+7. X x2 = new Y();\n
+8. Y y1 = new Y();\n
+9. // insert code here\n
+10. }\n
+11. }\n
+\n
+Which, inserted at line 9, will compile? (Choose all that apply.)\n</string>
+    <string name="questao26A">A. x2.do2();</string>
+    <string name="questao26B">B. (Y)x2.do2();</string>
+    <string name="questao26C">C. ((Y)x2).do2();</string>
+    <string name="questao26D">D. None of the above statements will compile</string>
+    <string name="RespostaQuestao26">Answer:\n
+        \n
+   C is correct. Before you can invoke Y’s do2 method you have to cast x2 to be of type Y.
+Statement B looks like a proper cast but without the second set of parentheses, the
+compiler thinks it’s an incomplete statement.\n
+    \n
+  B, C, D, and E are incorrect based on the preceding.</string>
+    <string name="title_activity_questao27">Question 27</string>
+    <string name="Questao27">Given:\n
+        \n
+1. ClassA has a ClassD\n
+2. Methods in ClassA use public methods in ClassB\n
+3. Methods in ClassC use public methods in ClassA\n
+4. Methods in ClassA use public variables in ClassB\n
+\n
+Which is most likely true? (Choose the most likely.)\n</string>
+    <string name="questao27A">A. ClassD has low cohesion</string>
+    <string name="questao27B">B. ClassA has weak encapsulation</string>
+    <string name="questao27C">C. ClassB has weak encapsulation;</string>
+    <string name="questao27D">D. ClassB has strong encapsulation</string>
+    <string name="questao27E">E. ClassC is tightly coupled to ClassA</string>
+    <string name="RespostaQuestao27">Answer:\n
+        \n
+   C is correct. Generally speaking, public variables are a sign of weak encapsulation.\n
+    \n
+  A, B, D, and E are incorrect, because based on the information given, none of these
+statements can be supported.</string>
+    <string name="title_activity_questao28">Question28</string>
+    <string name="Questao28">Given:\n
+        \n
+3. class Dog {\n
+4. public void bark() { System.out.print("woof "); }\n
+5. }\n
+6. class Hound extends Dog {\n
+7. public void sniff() { System.out.print("sniff "); }\n
+8. public void bark() { System.out.print("howl "); }\n
+9. }\n
+10. public class DogShow {\n
+11. public static void main(String[] args) { new DogShow().go(); }\n
+12. void go() {\n
+13. new Hound().bark();\n
+14. ((Dog) new Hound()).bark();\n
+15. ((Dog) new Hound()).sniff();\n
+16. }\n
+17. }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao28A">A. howl howl sniff</string>
+    <string name="questao28B">B. howl woof sniff</string>
+    <string name="questao28C">C. howl howl followed by an exception</string>
+    <string name="questao28D">D. howl woof followed by an exception</string>
+    <string name="questao28E">E. Compilation fails with an error at line 14</string>
+    <string name="questao28F">F. Compilation fails with an error at line 15</string>
+    <string name="RespostaQuestao28">Answer:\n
+        \n
+   F is correct. Class Dog doesn’t have a sniff method.\n
+    \n
+  A, B, C, D, and E are incorrect based on the above information.</string>
+    <string name="title_activity_questao29">Question 29</string>
+    <string name="Questao29">Given:\n
+        \n
+3. public class Redwood extends Tree {\n
+4. public static void main(String[] args) {\n
+5. new Redwood().go();\n
+6. }\n
+7. void go() {\n
+8. go2(new Tree(), new Redwood());\n
+9. go2((Redwood) new Tree(), new Redwood());\n
+10. }\n
+11. void go2(Tree t1, Redwood r1) {\n
+12. Redwood r2 = (Redwood)t1;\n
+13. Tree t2 = (Tree)r1;\n
+14. }\n
+15. }\n
+16. class Tree { }\n
+\n
+What is the result? (Choose all that apply.)\n</string>
+    <string name="questao29A">A. An exception is thrown at runtime</string>
+    <string name="questao29B">B. The code compiles and runs with no output</string>
+    <string name="questao29C">C. Compilation fails with an error at line 8</string>
+    <string name="questao29D">D. Compilation fails with an error at line 9</string>
+    <string name="questao29E">E. Compilation fails with an error at line 12</string>
+    <string name="questao29F">F. Compilation fails with an error at line 13</string>
+    <string name="RespostaQuestao29">Answer:\n
+        \n
+   A is correct, a ClassCastException will be thrown when the code attempts to downcast a
+Tree to a Redwood.\n
+    \n
+  B, C, D, E, and F are incorrect based on the above information.</string>
+    <string name="title_activity_questao30">Question30</string>
+    <string name="Questao30">Given:\n
+        \n
+3. public class Tenor extends Singer {\n
+4. public static String sing() { return "fa"; }\n
+5. public static void main(String[] args) {\n
+6. Tenor t = new Tenor();\n
+7. Singer s = new Tenor();\n
+8. System.out.println(t.sing() + " " + s.sing());\n
+9. }\n
+10. }\n
+11. class Singer { public static String sing() { return "la"; } }\n
+\n
+What is the result?\n</string>
+    <string name="questao30A">A. fa fa</string>
+    <string name="questao30B">B. fa la</string>
+    <string name="questao30C">C. la la</string>
+    <string name="questao30D">D. Compilation fails</string>
+    <string name="questao30E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao30">Answer:\n
+        \n
+  B is correct. The code is correct, but polymorphism doesn’t apply to static methods.\n
+    \n
+  A, C, D, and E are incorrect based on the above information.</string>
+    <string name="title_activity_questao31">Question31</string>
+    <string name="Questao31">Given:\n
+        \n
+3. class Alpha {\n
+4. static String s = " ";\n
+5. protected Alpha() { s += "alpha "; }\n
+6. }\n
+7. class SubAlpha extends Alpha {\n
+8. private SubAlpha() { s += "sub "; }\n
+9. }\n
+10. public class SubSubAlpha extends Alpha {\n
+11. private SubSubAlpha() { s += "subsub "; }\n
+12. public static void main(String[] args) {\n
+13. new SubSubAlpha();\n
+14. System.out.println(s);\n
+15. }\n
+16. }\n
+\n
+What is the result?\n</string>
+    <string name="questao31A">A. subsub</string>
+    <string name="questao31B">B. sub subsub</string>
+    <string name="questao31C">C. alpha subsub</string>
+    <string name="questao31D">D. alpha sub subsub</string>
+    <string name="questao31E">E. Compilation fails</string>
+    <string name="questao31F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao31">Answer:\n
+        \n
+  C is correct. Watch out, SubSubAlpha extends Alpha! Since the code doesn’t attempt
+to make a SubAlpha, the private constructor in SubAlpha is okay.\n
+    \n
+  A, B, D, E, and F are incorrect based on the above information.</string>
+    <string name="title_activity_questao32">Question 32</string>
+    <string name="Questao32">Given:\n
+        \n
+3. class Building {\n
+4. Building() { System.out.print("b "); }\n
+5. Building(String name) {\n
+6. this(); System.out.print("bn " + name);\n
+7. }\n
+8. }\n
+9. public class House extends Building {\n
+10. House() { System.out.print("h "); }\n
+11. House(String name) {\n
+12. this(); System.out.print("hn " + name);\n
+13. }\n
+14. public static void main(String[] args) { new House("x "); }\n
+15. }\n
+\n
+What is the result?\n</string>
+    <string name="questao32A">A. h hn x</string>
+    <string name="questao32B">B. hn x h</string>
+    <string name="questao32C">C. b h hn x</string>
+    <string name="questao32D">D. b hn x h</string>
+    <string name="questao32E">E. bn x h hn x</string>
+    <string name="questao32F">F. b bn x h hn x</string>
+    <string name="questao32G">G. bn x b h hn x</string>
+    <string name="questao32H">H. Compilation fails</string>
+    <string name="RespostaQuestao32">Answer:\n
+        \n
+ C is correct. Remember that constructors call their superclass constructors, which execute
+first, and that constructors can be overloaded.\n
+    \n
+  A, B, D, E, F, G, and H are incorrect based on the above information.</string>
+    <string name="title_activity_questao33">Question 33</string>
+    <string name="Questao33">Given:\n
+        \n
+3. class Mammal {\n
+4. String name = "furry ";\n
+5. String makeNoise() { return "generic noise"; }\n
+6. }\n
+7. class Zebra extends Mammal {\n
+8. String name = "stripes ";\n
+9. String makeNoise() { return "bray"; }\n
+10. }\n
+11. public class ZooKeeper {\n
+12. public static void main(String[] args) { new ZooKeeper().go(); }\n
+13. void go() {\n
+14. Mammal m = new Zebra();\n
+15. System.out.println(m.name + m.makeNoise());\n
+16. }\n
+17. }\n
+\n
+What is the result?\n</string>
+    <string name="questao33A">A. furry bray</string>
+    <string name="questao33B">B. stripes bray</string>
+    <string name="questao33C">C. furry generic noise</string>
+    <string name="questao33D">D. stripes generic noise</string>
+    <string name="questao33E">E. Compilation fails</string>
+    <string name="questao33F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao33">Answer:\n
+        \n
+A is correct. Polymorphism is only for instance methods.\n
+    \n
+  B, C, D, E, and F are incorrect based on the above information.</string>
+    <string name="title_activity_questao34">Question34</string>
+    <string name="Questao34">You’re designing a new online board game in which Floozels are a type of Jammers, Jammers can
+have Quizels, Quizels are a type of Klakker, and Floozels can have several Floozets. Which of the
+following fragments represent this design? (Choose all that apply.)\n</string>
+    <string name="questao34A">A. import java.util.*;\n
+interface Klakker { }\n
+class Jammer { Set<![CDATA[<Quizel>]]> q; }\n
+class Quizel implements Klakker { }\n
+public class Floozel extends Jammer { List<![CDATA[<Floozet>]]> f; }\n
+interface Floozet { }\n</string>
+    <string name="questao34B">B. import java.util.*;\n
+class Klakker { Set<![CDATA[<Quizel>]]> q; }\n
+class Quizel extends Klakker { }\n
+class Jammer { List<![CDATA[<Floozel>]]> f; }\n
+class Floozet extends Floozel { }\n
+public class Floozel { Set<![CDATA[<Klakker>]]> k; }\n</string>
+    <string name="questao34C">C. import java.util.*;\n
+class Floozet { }\n
+class Quizel implements Klakker { }\n
+class Jammer { List<![CDATA[<Quizel>]]> q; }\n
+interface Klakker { }\n
+class Floozel extends Jammer { List<![CDATA[<Floozet>]]> f; }\n</string>
+    <string name="questao34D">D. import java.util.*;\n
+interface Jammer extends Quizel { }\n
+interface Klakker { }\n
+interface Quizel extends Klakker { }\n
+interface Floozel extends Jammer, Floozet { }\n
+interface Floozet { }\n</string>
+    <string name="RespostaQuestao34">Answer:\n
+        \n
+A and C are correct. The phrase "type of" indicates an "is-a" relationship (extends or
+implements), and the phrase “have” is of course a "has-a" relationship (usually instance
+variables).\n
+    \n
+  B and D are incorrect based on the above information.</string>
+    <string name="title_activity_questao35">Question 35</string>
+    <string name="Questao35">Given:\n
+        \n
+3. class A { }\n
+4. class B extends A { }\n
+5. public class ComingThru {\n
+6. static String s = "-";\n
+7. public static void main(String[] args) {\n
+8. A[] aa = new A[2];\n
+9. B[] ba = new B[2];\n
+10. sifter(aa);\n
+11. sifter(ba);\n
+12. sifter(7);\n
+13. System.out.println(s);\n
+14. }\n
+15. static void sifter(A[]&#8230; a2) { s += "1"; }\n
+16. static void sifter(B[]&#8230; b1) { s += "2"; }\n
+17. static void sifter(B[] b1) { s += "3"; }\n
+18. static void sifter(Object o) { s += "4"; }\n
+19. }\n
+\n
+What is the result?\n</string>
+    <string name="questao35A">A. -124</string>
+    <string name="questao35B">B. -134</string>
+    <string name="questao35C">C. -424</string>
+    <string name="questao35D">D. -434</string>
+    <string name="questao35E">E. -444</string>
+    <string name="questao35F">F. Compilation fails</string>
+    <string name="RespostaQuestao35">Answer:\n
+        \n
+D is correct. In general, overloaded var-args methods are chosen last. Remember that arrays
+are objects. Finally, an int can be boxed to an Integer and then "widened" to an Object.\n
+    \n
+  A, B, C, E, and F are incorrect based on the above information.</string>
+    <string name="title_activity_questao36">Question 36</string>
+    <string name="Questao36">Given:\n
+        \n
+class CardBoard {\n
+Short story = 200;\n
+CardBoard go(CardBoard cb) {\n
+cb = null;\n
+return cb;\n
+}\n
+public static void main(String[] args) {\n
+CardBoard c1 = new CardBoard();\n
+CardBoard c2 = new CardBoard();\n
+CardBoard c3 = c1.go(c2);\n
+c1 = null;\n
+// do Stuff\n
+} }\n
+\n
+When // doStuff is reached, how many objects are eligible for GC?\n</string>
+    <string name="questao36A">A. 0</string>
+    <string name="questao36B">B. 1</string>
+    <string name="questao36C">C. 2</string>
+    <string name="questao36D">D. Compilation fails</string>
+    <string name="questao36E">E. It is not possible to know</string>
+    <string name="questao36F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao36">Answer:\n
+        \n
+C is correct. Only one CardBoard object (c1) is eligible, but it has an associated Short
+wrapper object that is also eligible.\n
+    \n
+  A, B, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao37">Question 37</string>
+    <string name="Questao37">Given:\n
+        \n\n
+class Alien {\n
+String invade(short ships) { return "a few"; }\n
+String invade(short&#8230; ships) { return "many"; }\n
+}\n
+class Defender {\n
+public static void main(String [] args) {\n
+System.out.println(new Alien().invade(7));\n
+} }
+\n
+What is the result?\n</string>
+    <string name="questao37A">A. many</string>
+    <string name="questao37B">B. a few</string>
+    <string name="questao37C">C. Compilation fails</string>
+    <string name="questao37D">D. The output is not predictable</string>
+    <string name="questao37E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao37">Answer:\n
+        \n
+C is correct, compilation fails. The var-args declaration is fine, but invade takes a short,
+so the argument 7 needs to be cast to a short. With the cast, the answer is B, \'a few\'.\n
+    \n
+  A, B, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao38">Question 38</string>
+    <string name="Questao38">Given:\n
+        \n
+1. class Dims {\n
+2. public static void main(String[] args) {\n
+3. int[][] a = {{1,2,}, {3,4}};\n
+4. int[] b = (int[]) a[1];\n
+5. Object o1 = a;\n
+6. int[][] a2 = (int[][]) o1;\n
+7. int[] b2 = (int[]) o1;\n
+8. System.out.println(b[1]);\n
+9. } }\n
+What is the result?\n</string>
+    <string name="questao38A">A. 2</string>
+    <string name="questao38B">B. 4</string>
+    <string name="questao38C">C. An exception is thrown at runtime</string>
+    <string name="questao38D">D. Compilation fails due to an error on line 4</string>
+    <string name="questao38E">E. Compilation fails due to an error on line 5</string>
+    <string name="questao38F">F. Compilation fails due to an error on line 6</string>
+    <string name="questao38G">G. Compilation fails due to an error on line 7</string>
+    <string name="RespostaQuestao38">Answer:\n
+        \n
+C is correct. A ClassCastException is thrown at line 7 because o1 refers to an int[][]
+not an int[]. If line 7 was removed, the output would be 4.\n
+    \n
+  A, B, D, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao39">Question 39</string>
+    <string name="Questao39">Given:\n
+        \n
+class Mixer {\n
+Mixer() { }\n
+Mixer(Mixer m) { m1 = m; }\n
+Mixer m1;\n
+public static void main(String[] args) {\n
+Mixer m2 = new Mixer();\n
+Mixer m3 = new Mixer(m2); m3.go();\n
+Mixer m4 = m3.m1; m4.go();\n
+Mixer m5 = m2.m1; m5.go();\n
+}\n
+void go() { System.out.print("hi "); }\n
+}\n
+What is the result?\n</string>
+    <string name="questao39A">A. hi</string>
+    <string name="questao39B">B. hi hi</string>
+    <string name="questao39C">C. hi hi hi</string>
+    <string name="questao39D">D. Compilation fails</string>
+    <string name="questao39E">E. hi, followed by an exception</string>
+    <string name="questao39F">F. hi hi, followed by an exception</string>
+    <string name="RespostaQuestao39">Answer:\n
+        \n
+F is correct. The m2 object’s m1 instance variable is never initialized, so when m5 tries to
+use it a NullPointerException is thrown.\n
+    \n
+  A, B, C, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao40">Question 40</string>
+    <string name="Questao40">Given:\n
+        \n
+class Fizz {\n
+int x = 5;\n
+public static void main(String[] args) {\n
+final Fizz f1 = new Fizz();\n
+Fizz f2 = new Fizz();\n
+Fizz f3 = FizzSwitch(f1,f2);\n
+System.out.println((f1 == f3) + " " + (f1.x == f3.x));\n
+}\n
+static Fizz FizzSwitch(Fizz x, Fizz y) {\n
+final Fizz z = x;\n
+z.x = 6;\n
+return z;\n
+} }\n
+What is the result?\n</string>
+    <string name="questao40A">A. true true</string>
+    <string name="questao40B">B. false true</string>
+    <string name="questao40C">C. true false</string>
+    <string name="questao40D">D. false false</string>
+    <string name="questao40E">E. Compilation fails</string>
+    <string name="questao40F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao40">Answer:\n
+        \n
+A is correct. The references f1, z, and f3 all refer to the same instance of Fizz. The final
+modifier assures that a reference variable cannot be referred to a different object, but final
+doesn’t keep the object’s state from changing.\n
+    \n
+  B, C, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao41">Question 41</string>
+    <string name="Questao41">Given:\n
+        \n
+class Bird {\n
+{ System.out.print("b1 "); }\n
+public Bird() { System.out.print("b2 "); }\n
+}\n
+class Raptor extends Bird {\n
+static { System.out.print("r1 "); }\n
+public Raptor() { System.out.print("r2 "); }\n
+{ System.out.print("r3 "); }\n
+static { System.out.print("r4 "); }\n
+}\n
+class Hawk extends Raptor {\n
+public static void main(String[] args) {\n
+System.out.print("pre ");\n
+new Hawk();\n
+System.out.println("hawk ");\n
+}\n
+}\n
+\n
+What is the result?\n</string>
+    <string name="questao41A">A. pre b1 b2 r3 r2 hawk</string>
+    <string name="questao41B">B. pre b2 b1 r2 r3 hawk</string>
+    <string name="questao41C">C. pre b2 b1 r2 r3 hawk r1 r4</string>
+    <string name="questao41D">D. r1 r4 pre b1 b2 r3 r2 hawk</string>
+    <string name="questao41E">E. r1 r4 pre b2 b1 r2 r3 hawk</string>
+    <string name="questao41F">F. pre r1 r4 b1 b2 r3 r2 hawk</string>
+    <string name="questao41G">G. pre r1 r4 b2 b1 r2 r3 hawk</string>
+    <string name="questao41H">H. The order of output cannot be predicted</string>
+    <string name="questao41I">I. Compilation fails</string>
+    <string name="RespostaQuestao41">Answer:\n
+        \n
+D is correct. Static init blocks are executed at class loading time, instance init blocks run
+right after the call to super() in a constructor. When multiple init blocks of a single type
+occur in a class, they run in order, from the top down.\n
+    \n
+  A, B, C, E, F, G, H, and I are incorrect based on the above.</string>
+    <string name="title_activity_questao42">Question 42</string>
+    <string name="Questao42">Given:\n
+        \n
+3. public class Bridge {\n
+4. public enum Suits {\n
+5. CLUBS(20), DIAMONDS(20), HEARTS(30), SPADES(30),\n
+6. NOTRUMP(40) { public int getValue(int bid) {\n
+return ((bid-1)*30)+40; } };\n
+7. Suits(int points) { this.points = points; }\n
+8. private int points;\n
+9. public int getValue(int bid) { return points * bid; }\n
+10. }\n
+11. public static void main(String[] args) {\n
+12. System.out.println(Suits.NOTRUMP.getBidValue(3));\n
+13. System.out.println(Suits.SPADES + " " + Suits.SPADES.points);\n
+14. System.out.println(Suits.values());\n
+15. }\n
+16. }\n
+\n
+Which are true? (Choose all that apply.)\n</string>
+    <string name="questao42A">A. The output could contain 30</string>
+    <string name="questao42B">B. The output could contain @bf73fa</string>
+    <string name="questao42C">C. The output could contain DIAMONDS</string>
+    <string name="questao42D">D. Compilation fails due to an error on line 6</string>
+    <string name="questao42E">E. Compilation fails due to an error on line 7</string>
+    <string name="questao42F">F. Compilation fails due to an error on line 8</string>
+    <string name="questao42G">G. Compilation fails due to an error on line 9</string>
+    <string name="questao42H">H. Compilation fails due to an error within lines 12 to 14</string>
+    <string name="RespostaQuestao42">Answer:\n
+        \n
+A and B are correct. The code compiles and runs without exception. The values()
+method returns an array reference, not the contents of the enum, so DIAMONDS is never
+printed.\n
+    \n
+  C, D, E, F, G, and H are incorrect based on the above.</string>
+    <string name="title_activity_questao43">Question 43</string>
+    <string name="Questao43">Given:\n
+        \n
+3. public class Ouch {\n
+4. static int ouch = 7;\n
+5. public static void main(String[] args) {\n
+6. new Ouch().go(ouch);\n
+7. System.out.print(" " + ouch);\n
+8. }\n
+9. void go(int ouch) {\n
+10. ouch++;\n
+11. for(int ouch = 3; ouch <![CDATA[<]]> 6; ouch++)\n
+12. ;\n
+13. System.out.print(" " + ouch);\n
+14. }\n
+15. }\n
+\n
+What is the result?\n</string>
+    <string name="questao43A">A. 5 7</string>
+    <string name="questao43B">B. 5 8</string>
+    <string name="questao43C">C. 8 7</string>
+    <string name="questao43D">D. 8 8</string>
+    <string name="questao43E">E. Compilation fails</string>
+    <string name="questao43F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao43">Answer:\n
+        \n
+E is correct. The parameter declared on line 9 is valid (although ugly), but the variable
+name ouch cannot be declared again on line 11 in the same scope as the declaration on
+line 9.\n
+    \n
+  A, B, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao44">Question 44</string>
+    <string name="Questao44">Given:\n
+        \n
+3. public class Bertha {\n
+4. static String s = "";\n
+5. public static void main(String[] args) {\n
+6. int x = 4; Boolean y = true; short[] sa = {1,2,3};\n
+7. doStuff(x, y);\n
+8. doStuff(x);\n
+9. doStuff(sa, sa);\n
+10. System.out.println(s);\n
+11. }\n
+12. static void doStuff(Object o) { s += "1"; }\n
+13. static void doStuff(Object&#8230; o) { s += "2"; }\n
+14. static void doStuff(Integer&#8230; i) { s += "3"; }\n
+15. static void doStuff(Long L) { s += "4"; }\n
+16. }\n
+\n
+What is the result?\n</string>
+    <string name="questao44A">A. 212</string>
+    <string name="questao44B">B. 232</string>
+    <string name="questao44C">C. 234</string>
+    <string name="questao44D">D. 312</string>
+    <string name="questao44E">E. 332</string>
+    <string name="questao44F">F. 334</string>
+    <string name="questao44G">G. Compilation Fails</string>
+    <string name="RespostaQuestao44">Answer:\n
+        \n
+A is correct. It\'s legal to autobox and then widen. The first call to doStuff() boxes
+the int to an Integer then passes two objects. The second call cannot widen and then
+box (making the Long method unusable), so it boxes the int to an Integer. As always, a
+var-args method will be chosen only if no non-var-arg method is possible. The third call is
+passing two objects—they are of type \'short array.\'\n
+    \n
+  B, C, D, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao45">Question 45</string>
+    <string name="Questao45">Given:\n
+        \n
+3. class Dozens {\n
+4. int[] dz = {1,2,3,4,5,6,7,8,9,10,11,12};\n
+5. }\n
+6. public class Eggs {\n
+7. public static void main(String[] args) {\n
+8. Dozens [] da = new Dozens[3];\n
+9. da[0] = new Dozens();\n
+10. Dozens d = new Dozens();\n
+11. da[1] = d;\n
+12. d = null;\n
+13. da[1] = null;\n
+14. // do stuff\n
+15. }\n
+16. }\n
+\n
+Which two are true about the objects created within main(), and eligible for garbage collection
+when line 14 is reached?\n</string>
+    <string name="questao45A">A. Three objects were created</string>
+    <string name="questao45B">B. Four objects were created</string>
+    <string name="questao45C">C. Five objects were created</string>
+    <string name="questao45D">D. Zero objects are eligible for GC</string>
+    <string name="questao45E">E. One object is eligible for GC</string>
+    <string name="questao45F">F. Two objects are eligible for GC</string>
+    <string name="questao45G">G. Three objects are eligible for GC</string>
+    <string name="RespostaQuestao45">Answer:\n
+        \n
+C and F are correct. da refers to an object of type "Dozens array," and each Dozens object
+that is created comes with its own "int array" object. When line 14 is reached, only the
+second Dozens object (and its "int array" object) are not reachable.\n
+    \n
+  A, B, D, E, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao46">Question 46</string>
+    <string name="Questao46">Given:\n
+        \n
+3. class Beta { }\n
+4. class Alpha {\n
+5. static Beta b1;\n
+6. Beta b2;\n
+7. }\n
+8. public class Tester {\n
+9. public static void main(String[] args) {\n
+10. Beta b1 = new Beta(); Beta b2 = new Beta();\n
+11. Alpha a1 = new Alpha(); Alpha a2 = new Alpha();\n
+12. a1.b1 = b1;\n
+13. a1.b2 = b1;\n
+14. a2.b2 = b2;\n
+15. a1 = null; b1 = null; b2 = null;\n
+16. // do stuff\n
+17. }\n
+18. }\n
+\n
+When line 16 is reached, how many objects will be eligible for garbage collection?\n</string>
+    <string name="questao46A">A. 0</string>
+    <string name="questao46B">B. 1</string>
+    <string name="questao46C">C. 2</string>
+    <string name="questao46D">D. 3</string>
+    <string name="questao46E">E. 4</string>
+    <string name="questao46F">F. 5</string>
+    <string name="RespostaQuestao46">Answer:\n
+        \n
+B is correct. It should be clear that there is still a reference to the object referred to by
+a2, and that there is still a reference to the object referred to by a2.b2. What might be
+less clear is that you can still access the other Beta object through the static variable
+a2.b1—because it\'s static.\n
+    \n
+  A, C, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao47">Question 47</string>
+    <string name="Questao47">Given:\n
+        \n
+3. class Box {\n
+4. int size;\n
+5. Box(int s) { size = s; }\n
+6. }\n
+7. public class Laser {\n
+8. public static void main(String[] args) {\n
+9. Box b1 = new Box(5);\n
+10. Box[] ba = go(b1, new Box(6));\n
+11. ba[0] = b1;\n
+12. for(Box b : ba) System.out.print(b.size + " ");\n
+13. }\n
+14. static Box[] go(Box b1, Box b2) {\n
+15. b1.size = 4;\n
+16. Box[] ma = {b2, b1};\n
+17. return ma;\n
+18. }\n
+19. }\n
+\n
+What is the result?</string>
+    <string name="questao47A">A. 4 4</string>
+    <string name="questao47B">B. 5 4</string>
+    <string name="questao47C">C. 6 4</string>
+    <string name="questao47D">D. 4 5</string>
+    <string name="questao47E">E. 5 5</string>
+    <string name="questao47F">F. Compilation Fails</string>
+    <string name="RespostaQuestao47">Answer:\n
+        \n
+A is correct. Although main()\'s b1 is a different reference variable than go()\'s b1, they
+refer to the same Box object.\n
+    \n
+  B, C, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao48">Question 48</string>
+    <string name="Questao48">Given:\n
+        \n
+3. public class Dark {\n
+4. int x = 3;\n
+5. public static void main(String[] args) {\n
+6. new Dark().go1();\n
+7. }\n
+8. void go1() {\n
+9. int x;\n
+10. go2(++x);\n
+11. }\n
+12. void go2(int y) {\n
+13. int x = ++y;\n
+14. System.out.println(x);\n
+15. }\n
+16. }\n
+\n
+What is the result?</string>
+    <string name="questao48A">A. 2</string>
+    <string name="questao48B">B. 3</string>
+    <string name="questao48C">C. 4</string>
+    <string name="questao48D">D. 5</string>
+    <string name="questao48E">E. Compilation Fails</string>
+    <string name="questao48F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao48">Answer:\n
+        \n
+E is correct. In go1() the local variable x is not initialized.\n
+    \n
+  A, B, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao49">Question 49</string>
+    <string name="Questao49">Given:\n
+        \n
+class Hexy {\n
+public static void main(String[] args) {\n
+Integer i = 42;\n
+String s = <![CDATA[(i<40)?"life":(i>50)?"universe":"everything";\n]]>System.out.println(s);\n
+}\n
+}\n
+\n
+What is the result?</string>
+    <string name="questao49A">A. null</string>
+    <string name="questao49B">B. life</string>
+    <string name="questao49C">C. universe</string>
+    <string name="questao49D">D. everything</string>
+    <string name="questao49E">E. Compilation Fails</string>
+    <string name="questao49F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao49">Answer:\n
+        \n
+D is correct. This is a ternary nested in a ternary with a little unboxing thrown in.
+Both of the ternary expressions are false.\n
+    \n
+  A, B, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao50">Question 50</string>
+    <string name="Questao50">Given:\n
+        \n
+1. class Comp2 {\n
+2. public static void main(String[] args) {\n
+3. float f1 = 2.3f;\n
+4. float[][] f2 = {{42.0f}, {1.7f, 2.3f}, {2.6f, 2.7f}};\n
+5. float[] f3 = {2.7f};\n
+6. Long x = 42L;\n
+7. // insert code here\n
+8. System.out.println("true");\n
+9. }\n
+10. }\n
+\n
+And the following five code fragments:\n
+\n
+F1. if(f1 == f2)\n
+F2. if(f1 == f2[2][1])\n
+F3. if(x == f2[0][0])\n
+F4. if(f1 == f2[1,1])\n
+F5. if(f3 == f2[2])\n
+\n
+What is the result?</string>
+    <string name="questao50A">A. One of them will compile, only one will be true</string>
+    <string name="questao50B">B. Two of them will compile, only one will be true</string>
+    <string name="questao50C">C. Two of them will compile, two will be true</string>
+    <string name="questao50D">D. Three of them will compile, only one will be true</string>
+    <string name="questao50E">E. Three of them will compile, exactly two will be true</string>
+    <string name="questao50F">F. Three of them will compile, exactly three will be true</string>
+    <string name="RespostaQuestao50">Answer:\n
+        \n
+D is correct. Fragments F2, F3, and F5 will compile, and only F3 is true.\n
+    \n
+  A, B, C, E, and F are incorrect. F1 is incorrect because you can’t compare a primitive to
+an array. F4 is incorrect syntax to access an element of a two-dimensional array.</string>
+    <string name="title_activity_questao51">Question 51</string>
+    <string name="Questao51">Given:\n
+        \n
+class Fork {\n
+public static void main(String[] args) {\n
+if(args.length == 1 | args[1].equals("test")) {\n
+System.out.println("test case");\n
+} else {\n
+System.out.println("production " + args[0]);\n
+}\n
+}\n
+}\n
+\n
+And the command-line invocation:\n
+\n
+java Fork live2
+\n
+What is the result?</string>
+    <string name="questao51A">A. test case</string>
+    <string name="questao51B">B. production live2</string>
+    <string name="questao51C">C. test case live2</string>
+    <string name="questao51D">D. Compilation fails</string>
+    <string name="questao51E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao51">Answer:\n
+        \n
+E is correct. Because the short circuit (||) is not used, both operands are evaluated. Since
+args[1] is past the args array bounds, an ArrayIndexOutOfBoundsException is thrown.\n
+    \n
+  A, B, C, and D are incorrect based on the above.</string>
+    <string name="title_activity_questao52">Question 52</string>
+    <string name="Questao52">Given:\n
+        \n
+class Feline {\n
+public static void main(String[] args) {\n
+Long x = 42L;\n
+Long y = 44L;\n
+System.out.print(" " + 7 + 2 + " ");\n
+System.out.print(foo() + x + 5 + " ");\n
+System.out.println(x + y + foo());\n
+}\n
+static String foo() { return "foo"; }\n
+}\n
+\n
+What is the result?</string>
+    <string name="questao52A">A. 9 foo47 86foo</string>
+    <string name="questao52B">B. 9 foo47 4244foo</string>
+    <string name="questao52C">C. 9 foo425 86foo</string>
+    <string name="questao52D">D. 9 foo425 4244foo</string>
+    <string name="questao52E">E. 72 foo47 86foo</string>
+    <string name="questao52F">F. 72 foo47 4244foo</string>
+    <string name="questao52G">G. 72 foo425 86foo</string>
+    <string name="questao52H">H. 72 foo425 4244foo</string>
+    <string name="questao52I">I. Compilation fails</string>
+    <string name="RespostaQuestao52">Answer:\n
+        \n
+G is correct. Concatenation runs from left to right, and if either operand is a String,
+the operands are concatenated. If both operands are numbers they are added together.
+Unboxing works in conjunction with concatenation.\n
+    \n
+  A, B, C, D, E, F, H, and I are incorrect based on the above.</string>
+    <string name="title_activity_questao53">Question 53</string>
+    <string name="Questao53">Given:\n
+        \n
+3. public class Twisty {\n
+4. { index = 1; }\n
+5. int index;\n
+6. public static void main(String[] args) {\n
+7. new Twisty().go();\n
+8. }\n
+9. void go() {\n
+10. int [][] dd = {{9,8,7}, {6,5,4}, {3,2,1,0}};\n
+11. System.out.println(dd[index++][index++]);\n
+12. }\n
+13. }\n
+\n
+What is the result?</string>
+    <string name="questao53A">A. 1</string>
+    <string name="questao53B">B. 2</string>
+    <string name="questao53C">C. 4</string>
+    <string name="questao53D">D. 6</string>
+    <string name="questao53E">E. 8</string>
+    <string name="questao53F">F. Compilation Fails</string>
+    <string name="questao53G">G. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao53">Answer:\n
+        \n
+C is correct. Multidimensional arrays\' dimensions can be inconsistent, the code uses an
+initialization block, and the increment operators are both post-increment operators.\n
+    \n
+  A, B, D, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao54">Question 54</string>
+    <string name="Questao54">Given:\n
+        \n
+3. public class McGee {\n
+4. public static void main(String[] args) {\n
+5. Days d1 = Days.TH;\n
+6. Days d2 = Days.M;\n
+7. for(Days d: Days.values()) {\n
+8. if(d.equals(Days.F)) break;\n
+9. d2 = d;\n
+10. }\n
+11. System.out.println((d1 == d2)?"same old" : "newly new");\n
+12. }\n
+13. enum Days {M, T, W, TH, F, SA, SU};\n
+14. }\n
+\n
+What is the result?</string>
+    <string name="questao54A">A. same old</string>
+    <string name="questao54B">B. newly new</string>
+    <string name="questao54C">C. Compilation fails due to multiple errors</string>
+    <string name="questao54D">D. Compilation fails due only to an error on line 7</string>
+    <string name="questao54E">E. Compilation fails due only to an error on line 8</string>
+    <string name="questao54F">F. Compilation fails due only to an error on line 11</string>
+    <string name="questao54G">G. Compilation fails due only to an error on line 13</string>
+    <string name="RespostaQuestao54">Answer:\n
+        \n
+A is correct. All of this syntax is correct. The for-each iterates through the enum using
+the values() method to return an array. Enums can be compared using either equals()
+or ==. Enums can be used in a ternary operator\'s Boolean test.\n
+    \n
+ B, C, D, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao55">Question 55</string>
+    <string name="Questao55">Given:\n
+        \n
+4. public class SpecialOps {\n
+5. public static void main(String[] args) {\n
+6. String s = "";\n
+7. Boolean b1 = true;\n
+8. Boolean b2 = false;\n
+9. if((b2 = false) | (21%5) > 2) s += "x";\n
+10. if(b1 || (b2 = true)) s += "y";\n
+11. if(b2 == true) s += "z";\n
+12. System.out.println(s);\n
+13. }\n
+14. }\n
+\n
+What is the result?</string>
+    <string name="questao55A">A. Compilation fails</string>
+    <string name="questao55B">B. x will be included in the output</string>
+    <string name="questao55C">C. y will be included in the output</string>
+    <string name="questao55D">D. z will be included in the output</string>
+    <string name="questao55E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao55">Answer:\n
+        \n
+C is correct. First of all, boxing takes care of the Boolean. Line 9 uses the modulus operator,
+which returns the remainder of the division, which in this case is 1. Also, line 9 sets b2 to
+false, and it doesn\'t test b2\'s value. Line 10 sets b2 to true, and it doesn\’t test its value;
+however, the short circuit operator keeps the expression b2 = true from being executed.\n
+    \n
+ A, B, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao56">Question56</string>
+    <string name="Questao56">Given:\n
+        \n
+3. public class Spock {\n
+4. public static void main(String[] args) {\n
+5. int mask = 0;\n
+6. int count = 0;\n
+7. if( <![CDATA[<String>((5<7) || (++count < 10)) | mask++ < 10 ) mask = mask + 1;]]>\n
+8. if( (6 > 8) ^ false) mask = mask + 10;\n
+9. if( <![CDATA[<String>!(mask > 1) && ++count > 1) mask = mask + 100;]]>\n
+10. System.out.println(mask + " " + count);\n
+11. }\n
+12. }\n
+\n
+What is the result?</string>
+    <string name="questao56A">A. mask is 0</string>
+    <string name="questao56B">B. mask is 1</string>
+    <string name="questao56C">C. mask is 2</string>
+    <string name="questao56D">D. mask is 10</string>
+    <string name="questao56E">E. mask is greater than 10</string>
+    <string name="questao56F">F. count is 0</string>
+    <string name="questao56G">G. count is greater than 0</string>
+    <string name="RespostaQuestao56">Answer:\n
+        \n
+C and F are correct. At line 7 the || keeps count from being incremented, but the
+| allows mask to be incremented. At line 8 the ^ returns true only if exactly one operand
+is true. At line 9 mask is 2 <![CDATA[<String>and the && keeps]]> count from being incremented.\n
+    \n
+ A, B, D, E, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao57">Question57</string>
+    <string name="Questao57">Given:\n
+        \n
+3. interface Vessel { }\n
+4. interface Toy { }\n
+5. class Boat implements Vessel { }\n
+6. class Speedboat extends Boat implements Toy { }\n
+7. public class Tree {\n
+8. public static void main(String[] args) {\n
+9. String s = "0";\n
+10. Boat b = new Boat();\n
+11. Boat b2 = new Speedboat();\n
+12. Speedboat s2 = new Speedboat();\n
+13. if((b instanceof <![CDATA[Vessel) && (b2 instanceof Toy)) s += "1"]]>;\n
+14. if((s2 instanceof <![CDATA[ Vessel) && (s2 instanceof Toy)) s += "2"]]>;\n
+15. System.out.println(s);\n
+16. }\n
+17. }\n
+\n
+What is the result?</string>
+    <string name="questao57A">A. 0</string>
+    <string name="questao57B">B. 01</string>
+    <string name="questao57C">C. 02</string>
+    <string name="questao57D">D. 012</string>
+    <string name="questao57E">E. Compilation fails</string>
+    <string name="questao57F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao57">Answer:\n
+        \n
+D is correct. First, remember that instanceof can look up through multiple levels of an
+inheritance tree. Also remember that instanceof is commonly used before attempting
+a downcast, so in this case, after line 15, it would be possible to say Speedboat s3 =
+(Speedboat)b2;.\n
+    \n
+ A, B, C, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao58">Question 58</string>
+    <string name="Questao58">Given two files:\n
+        \n
+1. class One {\n
+2. public static void main(String[] args) {\n
+3. int assert = 0;\n
+4. }\n
+5. }\n
+1. class Two {\n
+2. public static void main(String[] args) {\n
+3. assert(false);\n
+4. }\n
+5. }\n
+\n
+And the four command-line invocations:\n
+\n
+javac -source 1.3 One.java\n
+javac -source 1.4 One.java\n
+javac -source 1.3 Two.java\n
+javac -source 1.4 Two.java\n
+\n
+What is the result? (Choose all that apply.)</string>
+    <string name="questao58A">A. Only one compilation will succeed</string>
+    <string name="questao58B">B. Exactly two compilations will succeed</string>
+    <string name="questao58C">C. Exactly three compilations will succeed</string>
+    <string name="questao58D">D. All four compilations will succeed</string>
+    <string name="questao58E">E. No compiler warnings will be produced</string>
+    <string name="questao58F">F. At least one compiler warning will be produced</string>
+    <string name="RespostaQuestao58">Answer:\n
+        \n
+B and F are correct. Class One will compile (and issue a warning) using the 1.3 flag, and
+class Two will compile using the 1.4 flag.\n
+    \n
+A, C, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao59">Question 59</string>
+    <string name="Questao59">Given:\n
+        \n
+class Plane {\n
+static String s = "-";\n
+public static void main(String[] args) {\n
+new Plane().s1();\n
+System.out.println(s);\n
+}\n
+void s1() {\n
+try { s2(); }\n
+catch (Exception e) { s += "c"; }\n
+}\n
+void s2() throws Exception {\n
+s3(); s += "2";\n
+s3(); s += "2b";\n
+}\n
+void s3() throws Exception {\n
+throw new Exception();\n
+} }\n
+\n
+What is the result?</string>
+    <string name="questao59A">A. -</string>
+    <string name="questao59B">B. -c</string>
+    <string name="questao59C">C. -c2</string>
+    <string name="questao59D">D. -2c</string>
+    <string name="questao59E">E. -c22b</string>
+    <string name="questao59F">F. -2c2b</string>
+    <string name="questao59G">G. -2c2bc</string>
+    <string name="questao59H">H. Compilation fails</string>
+    <string name="RespostaQuestao59">Answer:\n
+        \n
+B is correct. Once s3() throws the exception to s2(), s2() throws it to s1(), and no
+more of s2()’s code will be executed.\n
+    \n
+A, C, D, E, F, G, and H are incorrect based on the above.</string>
+    <string name="title_activity_questao60">Question 60</string>
+    <string name="Questao60">Given:\n
+        \n
+try { int x = Integer.parseInt("two"); }\n
+\n
+Which could be used to create an appropriate catch block?</string>
+    <string name="questao60A">A. ClassCastException</string>
+    <string name="questao60B">B. IllegalStateException</string>
+    <string name="questao60C">C. NumberFormatException</string>
+    <string name="questao60D">D. IllegalArgumentException</string>
+    <string name="questao60E">E. ExceptionInInitializerError</string>
+    <string name="questao60F">F. ArrayIndexOutOfBoundsException</string>
+    <string name="RespostaQuestao60">Answer:\n
+        \n
+C and D are correct. Integer.parseInt can throw a NumberFormatException, and
+IllegalArgumentException is its superclass (i.e., a broader exception).\n
+    \n
+A, B, E, and F are not in NumberFormatException’s class hierarchy.</string>
+    <string name="title_activity_questao61">Question 61</string>
+    <string name="Questao61">Which are true? (Choose all that apply.)\n</string>
+    <string name="questao61A">A. It is appropriate to use assertions to validate arguments to methods marked public</string>
+    <string name="questao61B">B. It is appropriate to catch and handle assertion errors</string>
+    <string name="questao61C">C. It is NOT appropriate to use assertions to validate command-line arguments</string>
+    <string name="questao61D">D. It is appropriate to use assertions to generate alerts when you reach code that should not
+be reachable</string>
+    <string name="questao61E">E. It is NOT appropriate for assertions to change a program’s state</string>
+    <string name="RespostaQuestao61">Answer:\n
+        \n
+C, D, and E are correct statements.\n
+    \n
+A is incorrect. It is acceptable to use assertions to test the arguments of private methods.
+B is incorrect. While assertion errors can be caught, Oracle discourages you from doing so.</string>
+    <string name="title_activity_questao62">Question 62</string>
+    <string name="Questao62">Given:\n
+        \n
+        1. class Loopy {\n
+2. public static void main(String[] args) {\n
+3. int[] x = {7,6,5,4,3,2,1};\n
+4. // insert code here\n
+5. System.out.print(y + " ");\n
+6. }\n
+7. } }\n
+\n
+Which, inserted independently at line 4, compiles? (Choose all that apply.)</string>
+    <string name="questao62A">A. for(int y : x) {</string>
+    <string name="questao62B">B. for(x : int y) {</string>
+    <string name="questao62C">C. int y = 0; for(y : x) {</string>
+    <string name="questao62D">D. <![CDATA[for(int y=0, z=0; z<x.length; z++) { y = x[z];]]></string>
+    <string name="questao62E">E. <![CDATA[for(int y=0, int z=0; z<x.length; z++) { y = x[z];]]></string>
+    <string name="questao62F">F. int <![CDATA[y = 0; for(int z=0; z<x.length; z++) { y = x[z];]]></string>
+    <string name="RespostaQuestao62">Answer:\n
+        \n
+A, D, and F are correct. A is an example of the enhanced for loop. D and F are examples
+of the basic for loop.\n
+    \n
+B is incorrect because its operands are swapped. C is incorrect because the enhanced
+for must declare its first operand. E is incorrect syntax to declare two variables in a for
+statement.</string>
+    <string name="title_activity_questao63">Question 63</string>
+    <string name="Questao63">Given:\n
+        \n
+       class Emu {\n
+static String s = "-";\n
+public static void main(String[] args) {\n
+try {\n
+throw new Exception();\n
+} catch (Exception e) {\n
+try {\n
+try { throw new Exception();\n
+} catch (Exception ex) { s += "ic "; }\n
+throw new Exception(); }\n
+catch (Exception x) { s += "mc "; }\n
+finally { s += "mf "; }\n
+} finally { s += "of "; }\n
+System.out.println(s);\n
+} }\n
+\n
+What is the result?</string>
+    <string name="questao63A">A. -ic of</string>
+    <string name="questao63B">B. -mf of</string>
+    <string name="questao63C">C. -mc mf</string>
+    <string name="questao63D">D. -ic mf of</string>
+    <string name="questao63E">E. -ic mc mf of</string>
+    <string name="questao63F">F. -ic mc of mf</string>
+    <string name="questao63G">G. Compilation fails</string>
+    <string name="RespostaQuestao63">Answer:\n
+        \n
+E is correct. There is no problem nesting try / catch blocks. As is normal, when an
+exception is thrown, the code in the catch block runs, then the code in the finally block
+runs.\n
+    \n
+A, B, C, D, F and G are incorrect based on the above.</string>
+    <string name="title_activity_questao64">Question 64</string>
+    <string name="Questao64">Given:\n
+        \n
+       3. class SubException extends Exception { }\n
+4. class SubSubException extends SubException { }\n
+5.\n
+6. public class CC { void doStuff() throws SubException { } }\n
+7.\n
+8. class CC2 extends CC { void doStuff() throws SubSubException { } }\n
+9.\n
+10. class CC3 extends CC { void doStuff() throws Exception { } }\n
+11.\n
+12. class CC4 extends CC { void doStuff(int x) throws Exception { } }\n
+13.\n
+14. class CC5 extends CC { void doStuff() { } }\n
+\n
+What is the result? (Choose all that apply.)</string>
+    <string name="questao64A">A. Compilation succeeds</string>
+    <string name="questao64B">B. Compilation fails due to an error on line 8</string>
+    <string name="questao64C">C. Compilation fails due to an error on line 10</string>
+    <string name="questao64D">D. Compilation fails due to an error on line 12</string>
+    <string name="questao64E">E. Compilation fails due to an error on line 14</string>
+    <string name="RespostaQuestao64">Answer:\n
+        \n
+C is correct. An overriding method cannot throw a broader exception than the method it\'s
+overriding. Class CC4\'s method is an overload, not an override.\n
+    \n
+A, B, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao65">Question 65</string>
+    <string name="Questao65">Given:\n
+        \n
+      3. public class Ebb {\n
+4. static int x = 7;\n
+5. public static void main(String[] args) {\n
+6. String s = "";\n
+7. <![CDATA[for(int y = 0; y < 3; y++)]]> {\n
+8. x++;\n
+9. switch(x) {\n
+10. case 8: s += "8 ";\n
+11. case 9: s += "9 ";\n
+12. case 10: { s+= "10 "; break; }\n
+13. default: s += "d ";\n
+14. case 13: s+= "13 ";\n
+15. }\n
+16. }\n
+17. System.out.println(s);\n
+18. }\n
+19. static { x++; }\n
+20. }\n
+\n
+What is the result?</string>
+    <string name="questao65A">A. 9 10 d</string>
+    <string name="questao65B">B. 8 9 10 d</string>
+    <string name="questao65C">C. 9 10 10 d</string>
+    <string name="questao65D">D. 9 10 10 d 13</string>
+    <string name="questao65E">E. 8 9 10 10 d 13</string>
+    <string name="questao65F">F. 8 9 10 9 10 10 d 13</string>
+    <string name="questao65G">G. Compilation fails</string>
+    <string name="RespostaQuestao65">Answer:\n
+        \n
+D is correct. Did you catch the static initializer block? Remember that switches work on
+"fall-thru" logic, and that fall-thru logic also applies to the default case, which is used when
+no other case matches.\n
+    \n
+A, B, C, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao66">Question 66</string>
+    <string name="Questao66">Given:\n
+        \n
+     3. class Infinity { }\n
+4. public class Beyond extends Infinity {\n
+5. static Integer i;\n
+6. public static void main(String[] args) {\n
+7. int sw = (int)(Math.random() * 3);\n
+8. switch(sw) {\n
+9. case 0: { for(int x = 10; x > 5; x++)\n
+10. if(x > 10000000) x = 10;\n
+11. break; }\n
+12. case 1: { int y = 7 * i; break; }\n
+13. case 2: { Infinity inf = new Beyond();\n
+14. Beyond b = (Beyond)inf; }\n
+15. }\n
+16. }\n
+17. }\n
+\n
+\n
+And given that line 7 will assign the value 0, 1, or 2 to sw, which are true? (Choose all that apply.)</string>
+    <string name="questao66A">A. Compilation fails</string>
+    <string name="questao66B">B. A ClassCastException might be thrown</string>
+    <string name="questao66C">C. A StackOverflowError might be thrown</string>
+    <string name="questao66D">D. A NullPointerException might be thrown</string>
+    <string name="questao66E">E. An IllegalStateException might be thrown</string>
+    <string name="questao66F">F. The program might hang without ever completing</string>
+    <string name="questao66G">G. The program will always complete without exception</string>
+    <string name="RespostaQuestao66">Answer:\n
+        \n
+D and F are correct. Because i was not initialized, case 1 will throw an NPE. Case 0 will
+initiate an endless loop, not a stack overflow. Case 2\'s downcast will not cause an exception.\n
+    \n
+A, B, C, E, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao67">Question 67</string>
+    <string name="Questao67">Given:\n
+        \n
+   3. public class Circles {\n
+4. public static void main(String[] args) {\n
+5. int[] ia = {1,3,5,7,9};\n
+6. for(int x : ia) {\n
+7. <![CDATA[for(int j = 0; j < 3; j++)]]> {\n
+8. <![CDATA[if(x > 4 && x < 8)]]> continue;\n
+9. System.out.print(" " + x);\n
+10. if(j == 1) break;\n
+11. continue;\n
+12. }\n
+13. continue;\n
+14. }\n
+15. }\n
+16. }\n
+\n
+What is the result?</string>
+    <string name="questao67A">A. 1 3 9</string>
+    <string name="questao67B">B. 5 5 7 7</string>
+    <string name="questao67C">C. 1 3 3 9 9</string>
+    <string name="questao67D">D. 1 1 3 3 9 9</string>
+    <string name="questao67E">E. 1 1 1 3 3 3 9 9 9</string>
+    <string name="questao67F">F. Compilation fails</string>
+    <string name="RespostaQuestao67">Answer:\n
+        \n
+D is correct. The basic rule for unlabeled continue statements is that the current iteration
+stops early and execution jumps to the next iteration. The last two continue statements are
+redundant!\n
+    \n
+A, B, C, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao68">Question 68</string>
+    <string name="Questao68">Given:\n
+        \n
+  3. public class OverAndOver {\n
+4. static String s = "";\n
+5. public static void main(String[] args) {\n
+6. try {\n
+7. s += "1";\n
+8. throw new Exception();\n
+9. } catch (Exception e) { s += "2";\n
+10. } finally { s += "3"; doStuff(); s += "4";\n
+11. }\n
+12. System.out.println(s);\n
+13. }\n
+14. static void doStuff() { int x = 0; int y = 7/x; }\n
+15. }\n
+\n
+What is the result?</string>
+    <string name="questao68A">A. 12</string>
+    <string name="questao68B">B. 13</string>
+    <string name="questao68C">C. 123</string>
+    <string name="questao68D">D. 1234</string>
+    <string name="questao68E">E. Compilation fails</string>
+    <string name="questao68F">F. 123 followed by an exception</string>
+    <string name="questao68G">G. 1234 followed by an exception</string>
+    <string name="questao68H">H. An exception is thrown with no other output</string>
+    <string name="RespostaQuestao68">Answer:\n
+        \n
+H is correct. It\'s true that the value of String s is 123 at the time that the divide-byzero
+exception is thrown, but finally() is not guaranteed to complete, and in this case
+finally() never completes, so the System.out.println (S.O.P.) never executes.\n
+    \n
+A, B, C, D, E, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao69">Question 69</string>
+    <string name="Questao69">Given:\n
+        \n
+  3. public class Wind { \n
+4. public static void main(String[] args) { \n
+5. foreach: \n
+6. <![CDATA[for(int j=0; j<5; j++)]]> {\n
+7. <![CDATA[for(int k=0; k< 3; k++)]]> {\n
+8. System.out.print(" " + j);\n
+9. <![CDATA[if(j==3 && k==1) break foreach]]>;\n
+10. <![CDATA[if(j==0 || j==2) break]]>;\n
+11. }\n
+12. }\n
+13. }\n
+14. }\n
+\n
+What is the result?</string>
+    <string name="questao69A">A. 0 1 2 3</string>
+    <string name="questao69B">B. 1 1 1 3 3</string>
+    <string name="questao69C">C. 0 1 1 1 2 3 3</string>
+    <string name="questao69D">D. 1 1 1 3 3 4 4 4</string>
+    <string name="questao69E">E. 0 1 1 1 2 3 3 4 4 4</string>
+    <string name="questao69F">F. Compilation fails</string>
+    <string name="RespostaQuestao69">Answer:\n
+        \n
+C is correct. A break breaks out of the current innermost loop and continues. A labeled
+break breaks out of and terminates the current loops.\n
+    \n
+A, B, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao70">Question 70</string>
+    <string name="Questao70">Given:\n
+        \n
+ 3. public class Gotcha {\n
+4. public static void main(String[] args) {\n
+5. // insert code here\n
+6.\n
+7. }\n
+8. void go() {\n
+9. go();\n
+10. }\n
+11. }\n
+\n
+And given the following three code fragments:\n
+\n
+I. new Gotcha().go();\n
+\n
+II. try { new Gotcha().go(); }\n
+catch (Error e) { System.out.println("ouch"); }\n
+\n
+III. try { new Gotcha().go(); }\n
+catch (Exception e) { System.out.println("ouch"); }\n
+\n
+When fragments I - III are added, independently, at line 5, which are true? (Choose all that apply.)</string>
+    <string name="questao70A">A. Some will not compile</string>
+    <string name="questao70B">B. They will all compile</string>
+    <string name="questao70C">C. All will complete normally</string>
+    <string name="questao70D">D. None will complete normally</string>
+    <string name="questao70E">E. Only one will complete normally</string>
+    <string name="questao70F">F. Two of them will complete normally</string>
+    <string name="RespostaQuestao70">Answer:\n
+        \n
+B and E are correct. First off, go() is a badly designed recursive method, guaranteed to
+cause a StackOverflowError. Since Exception is not a superclass of Error, catching an
+Exception will not help handle an Error, so fragment III will not complete normally.
+Only fragment II will catch the Error.\n
+    \n
+A, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao71">Question 71</string>
+    <string name="Questao71">Given:\n
+        \n
+ 3. public class Clumsy {\n
+4. public static void main(String[] args) {\n
+5. int j = 7;\n
+6. assert(++j > 7);\n
+7. assert(++j > 8): "hi";\n
+8. assert(j > 10): j=12;\n
+9. assert(j==12): doStuff();\n
+10. assert(j==12): new Clumsy();\n
+11. }\n
+12. static void doStuff() { }\n
+13. }\n
+\n
+Which are true? (Choose all that apply.)</string>
+    <string name="questao71A">A. Compilation succeeds</string>
+    <string name="questao71B">B. Compilation fails due to an error on line 6</string>
+    <string name="questao71C">C. Compilation fails due to an error on line 7</string>
+    <string name="questao71D">D. Compilation fails due to an error on line 8</string>
+    <string name="questao71E">E. Compilation fails due to an error on line 9</string>
+    <string name="questao71F">F. Compilation fails due to an error on line 10</string>
+    <string name="RespostaQuestao71">Answer:\n
+        \n
+E is correct. When an assert statement has two expressions, the second expression must
+return a value. The only two-expression assert statement that doesn’t return a value is on
+line 9.\n
+    \n
+A, B, C, D, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao72">Question 72</string>
+    <string name="Questao72">Given:\n
+        \n
+1. public class Frisbee {\n
+2. // insert code here\n
+3. int x = 0;
+4. System.out.println(7/x);\n
+5. }\n
+6. }\n
+\n
+And given the following four code fragments:\n
+\n
+I. public static void main(String[] args) {\n
+II. public static void main(String[] args) throws Exception {\n
+III. public static void main(String[] args) throws IOException {\n
+IV. public static void main(String[] args) throws RuntimeException {\n
+\n
+If the four fragments are inserted independently at line 4, which are true? (Choose all that apply.)</string>
+    <string name="questao72A">A. All four will compile and execute without exception</string>
+    <string name="questao72B">B. All four will compile and execute and throw an exception</string>
+    <string name="questao72C">C. Some, but not all, will compile and execute without exception</string>
+    <string name="questao72D">D. Some, but not all, will compile and execute and throw an exception</string>
+    <string name="questao72E">E. When considering fragments II, III, and IV, of those that will compile, adding a try/catch
+block around line 6 will cause compilation to fail</string>
+    <string name="RespostaQuestao72">Answer:\n
+        \n
+D is correct. This is kind of sneaky, but remember that we\'re trying to toughen you up for
+the real exam. If you\'re going to throw an IOException, you have to import the java.io
+package or declare the exception with a fully qualified name.\n
+    \n
+E is incorrect because it\'s okay to both handle and declare an exception. A, B, and C are
+incorrect based on the above.</string>
+    <string name="title_activity_questao73">Question 73</string>
+    <string name="Questao73">Given:\n
+        \n
+2. class MyException extends Exception { }
+3. class Tire {
+4. void doStuff() { }
+5. }
+6. public class Retread extends Tire {
+7. public static void main(String[] args) {
+8. new Retread().doStuff();
+9. }
+10. // insert code here
+11. System.out.println(7/0);
+12. }
+13. }\n
+\n
+And given the following four code fragments:\n
+\n
+I. void doStuff() {\n
+II. void doStuff() throws MyException {\n
+III. void doStuff() throws RuntimeException {\n
+IV. void doStuff() throws ArithmeticException {\n
+\n
+When fragments I - IV are added, independently, at line 10, which are true? (Choose all that apply.)</string>
+    <string name="questao73A">A. None will compile</string>
+    <string name="questao73B">B. They will all compile</string>
+    <string name="questao73C">C. Some, but not all, will compile</string>
+    <string name="questao73D">D. All of those that compile will throw an exception at runtime</string>
+    <string name="questao73E">E. None of those that compile will throw an exception at runtime</string>
+    <string name="questao73F">F. Only some of those that compile will throw an exception at runtime</string>
+    <string name="RespostaQuestao73">Answer:\n
+        \n
+C and D are correct. An overriding method cannot throw checked exceptions that are
+broader than those thrown by the overridden method. However an overriding method can
+throw RuntimeExceptions not thrown by the overridden method.\n
+    \n
+A, B, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao74">Question 74</string>
+    <string name="Questao74">Given:\n
+        \n
+import java.util.regex.*;\n
+class Regex2 {\n
+public static void main(String[] args) {\n
+Pattern p = Pattern.compile(args[0]);\n
+Matcher m = p.matcher(args[1]);\n
+boolean b = false;\n
+while(b = m.find()) {\n
+System.out.print(m.start() + m.group());\n
+}\n
+}\n
+}\n
+\n
+And the command line:\n
+\n
+java Regex2 "\d*" ab34ef\n
+\n
+What is the result?</string>
+    <string name="questao74A">A. 234</string>
+    <string name="questao74B">B. 334</string>
+    <string name="questao74C">C. 2334</string>
+    <string name="questao74D">D. 0123456</string>
+    <string name="questao74E">E. 01234456</string>
+    <string name="questao74F">F. 12334567</string>
+    <string name="questao74G">G. Compilation fails</string>
+    <string name="RespostaQuestao74">Answer:\n
+        \n
+E is correct. The \d is looking for digits. The * is a quantifier that looks for 0 to many
+occurrences of the pattern that precedes it. Because we specified *, the group() method
+returns empty Strings until consecutive digits are found, so the only time group() returns
+a value is when it returns 34 when the matcher finds digits starting in position 2. The
+start() method returns the starting position of the previous match because, again,
+we said find 0 to many occurrences.\n
+    \n
+A, B, C, D, F, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao75">Question 75</string>
+    <string name="Questao75">Given:\n
+        \n
+import java.io.*;\n
+class Player {\n
+Player() { System.out.print("p"); }\n
+}\n
+class CardPlayer extends Player implements Serializable {\n
+CardPlayer() { System.out.print("c"); }\n
+public static void main(String[] args) {\n
+CardPlayer c1 = new CardPlayer();\n
+try {\n
+FileOutputStream fos = new FileOutputStream("play.txt");\n
+ObjectOutputStream os = new ObjectOutputStream(fos);\n
+os.writeObject(c1);\n
+os.close();\n
+FileInputStream fis = new FileInputStream("play.txt");\n
+ObjectInputStream is = new ObjectInputStream(fis);\n
+CardPlayer c2 = (CardPlayer) is.readObject();\n
+is.close();\n
+} catch (Exception x ) { }\n
+}\n
+}\n
+\n
+What is the result?</string>
+    <string name="questao75A">A. pc</string>
+    <string name="questao75B">B. pcc</string>
+    <string name="questao75C">C. pcp</string>
+    <string name="questao75D">D. pcpc</string>
+    <string name="questao75E">E. Compilation fails</string>
+    <string name="questao75F">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao75">Answer:\n
+        \n
+C is correct. It\'s okay for a class to implement Serializable even if its superclass doesn\'t.
+However, when you deserialize such an object, the non-serializable superclass must run its
+constructor. Remember, constructors don\'t run on deserialized classes that implement
+Serializable.\n
+    \n
+A, B, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao76">Question 76</string>
+    <string name="Questao76">Given:\n
+        \n
+class TKO {\n
+public static void main(String[] args) {\n
+String s = "-";\n
+Integer x = 343;\n
+long L343 = 343L;\n
+if(x.equals(L343)) s += ".e1 ";\n
+if(x.equals(343)) s += ".e2 ";\n
+Short s1 = (short)((new Short((short)343)) / (new Short((short)49)));\n
+if(s1 == 7) s += "=s ";\n<![CDATA[if(s1 < new Integer(7+1)) s += "fly "]]>;\n
+System.out.println(s);\n
+} }\n
+\n
+Which of the following will be included in the output String s? (Choose all that apply.)</string>
+    <string name="questao76A">A. .e1</string>
+    <string name="questao76B">B. .e2</string>
+    <string name="questao76C">C. =s</string>
+    <string name="questao76D">D. fly</string>
+    <string name="questao76E">E. None of the above</string>
+    <string name="questao76F">F. Compilation fails</string>
+    <string name="questao76G">F. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao76">Answer:\n
+        \n
+B, C, and D are correct. Remember, that the equals() method for the integer wrappers
+will only return true if the two primitive types and the two values are equal. With C, it\'s
+okay to unbox and use ==. For D, it\'s okay to create a wrapper object with an expression,
+and unbox it for comparison with a primitive.\n
+    \n
+A, E, F, and G are incorrect based on the above. (Remember that A is using the equals()
+method to try to compare two different types.)</string>
+    <string name="title_activity_questao77">Question 77</string>
+    <string name="Questao77">Given:\n
+        \n
+import java.io.*;\n
+\n
+class Keyboard { }\n
+public class Computer implements Serializable {\n
+private Keyboard k = new Keyboard();\n
+public static void main(String[] args) {\n
+Computer c = new Computer();\n
+c.storeIt(c);\n
+}\n
+void storeIt(Computer c) {\n
+try {\n
+ObjectOutputStream os = new ObjectOutputStream(\n
+new FileOutputStream("myFile"));\n
+os.writeObject(c);\n
+os.close();\n
+System.out.println("done");\n
+} catch (Exception x) {System.out.println("exc"); }\n
+}\n
+}\n
+\n
+What is the result? (Choose all that apply.)</string>
+    <string name="questao77A">A. exc</string>
+    <string name="questao77B">B. done</string>
+    <string name="questao77C">C. Compilation fails</string>
+    <string name="questao77D">D. Exactly one object is serialized</string>
+    <string name="questao77E">E. Exactly two objects are serialized</string>
+    <string name="RespostaQuestao77">Answer:\n
+        \n
+A is correct. An instance of type Computer Has-a Keyboard. Because Keyboard doesn\'t
+implement Serializable, any attempt to serialize an instance of Computer will cause an
+exception to be thrown.\n
+    \n
+B, C, D, and E are incorrect based on the above. If Keyboard did implement Serializable
+then two objects would have been serialized.</string>
+    <string name="title_activity_questao78">Question 78</string>
+    <string name="Questao78">Given:\n
+        \n
+import java.io.*;\n
+\n
+class Directories {\n
+static String [] dirs = {"dir1", "dir2"};\n
+public static void main(String [] args) {\n
+for (String d : dirs) {\n
+// insert code 1 here\n
+File file = new File(path, args[0]);\n
+// insert code 2 here\n
+}\n
+}\n
+}\n
+\n
+and that the invocation\n
+\n
+java Directories file2.txt\n
+\n
+is issued from a directory that has two subdirectories, "dir1" and "dir2", and that "dir1" has a file
+"file1.txt" and "dir2" has a file "file2.txt", and the output is "false true", which set(s)
+of code fragments must be inserted? (Choose all that apply.)</string>
+    <string name="questao78A">A. String path = d;\n
+System.out.print(file.exists() + " ");</string>
+    <string name="questao78B">B. String path = d;\n
+System.out.print(file.isFile() + " ");</string>
+    <string name="questao78C">C. String path = File.separator + d;\n
+System.out.print(file.exists() + " ");</string>
+    <string name="questao78D">D. String path = File.separator + d;\n
+System.out.print(file.isFile() + " ");</string>
+    <string name="RespostaQuestao78">Answer:\n
+        \n
+A and B are correct. Because you are invoking the program from the directory whose
+direct subdirectories are to be searched, you don\'t start your path with a File.separator
+character. The exists() method tests for either files or directories; the isFile()
+method tests only for files. Since we\'re looking for a file, both methods work.
+    \n
+C and D are incorrect based on the above.</string>
+    <string name="title_activity_questao79">Question 79</string>
+    <string name="Questao79">Given:\n
+        \n
+3. public class Theory {\n
+4. public static void main(String[] args) {\n
+5. String s1 = "abc";\n
+6. String s2 = s1;\n
+7. s1 += "d";\n
+8. System.out.println(s1 + " " + s2 + " " + (s1==s2));\n
+9.\n
+10. StringBuffer sb1 = new StringBuffer("abc");\n
+11. StringBuffer sb2 = sb1;\n
+12. sb1.append("d");\n
+13. System.out.println(sb1 + " " + sb2 + " " + (sb1==sb2));\n
+14. }\n
+15. }\n
+\n
+Which are true? (Choose all that apply.)\n</string>
+    <string name="questao79A">A. Compilation fails</string>
+    <string name="questao79B">B. The first line of output is abc abc true</string>
+    <string name="questao79C">C. The first line of output is abc abc false</string>
+    <string name="questao79D">D. The first line of output is abcd abc false</string>
+    <string name="questao79E">E. The second line of output is abcd abc false</string>
+    <string name="questao79F">F. The second line of output is abcd abcd true</string>
+    <string name="questao79G">G. The second line of output is abcd abcd false</string>
+    <string name="RespostaQuestao79">Answer:\n
+        \n
+D and F are correct. While String objects are immutable, references to Strings are mutable.
+The code s1 += "d"; creates a new String object. StringBuffer objects are mutable, so the
+append() is changing the single StringBuffer object to which both StringBuffer references
+refer.
+    \n
+A, B, C, E, and G are incorrect based on the above.</string>
+    <string name="title_activity_questao80">Question 80</string>
+    <string name="Questao80">Given:\n
+        \n
+3. import java.io.*;\n
+4. public class ReadingFor {\n
+5. public static void main(String[] args) {\n
+6. String s;\n
+7. try {\n
+8. FileReader fr = new FileReader("myfile.txt");\n
+9. BufferedReader br = new BufferedReader(fr);\n
+10. while((s = br.readLine()) != null)\n
+11. System.out.println(s);\n
+12. br.flush();\n
+13. } catch (IOException e) { System.out.println("io error"); }\n
+16. }\n
+17. }\n
+\n
+And given that myfile.txt contains the following two lines of data:\n
+\n
+ab
+cd\n
+\n
+What is the result?</string>
+    <string name="questao80A">A. ab</string>
+    <string name="questao80B">B. abcd</string>
+    <string name="questao80C">C. ab \n
+        cd</string>
+    <string name="questao80D">D. a \n b \n c \n d</string>
+    <string name="questao80E">E. Compilation fails</string>
+    <string name="RespostaQuestao80">Answer:\n
+        \n
+E is correct. You need to call flush() only when you\'re writing data. Readers don\'t have
+flush() methods. If not for the call to flush(), answer C would be correct.
+    \n
+A, B, C, and D are incorrect based on the above.</string>
+    <string name="title_activity_questao81">Question 81</string>
+    <string name="Questao81">Given:\n
+        \n
+3. import java.io.*;\n
+4. public class Talker {\n
+5. public static void main(String[] args) {\n
+6. Console c = System.console();\n
+7. <![CDATA[String u = c.readLine("%%s", "username: ")]]>;\n
+8. System.out.println("hello " + u);\n
+9. String pw;\n
+10. <![CDATA[if(c != null && (pw = c.readPassword("%%s", "password: ")) != null)]]>\n
+11. // check for valid password\n
+12. }\n
+13. }\n
+\n
+If line 6 creates a valid Console object, and if the user enters fred as a username and 1234 as a
+password, what is the result? (Choose all that apply.)</string>
+    <string name="questao81A">A. username:\n
+password:</string>
+    <string name="questao81B">B. username: fred\n
+password:</string>
+    <string name="questao81C">C. username: fred\n
+password: 1234</string>
+    <string name="questao81D">D. Compilation fails</string>
+    <string name="questao81E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao81">Answer:\n
+        \n
+D is correct. The readPassword() method returns a char[]. If a char[] were used,
+answer B would be correct.
+    \n
+A, B, C, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao82">Question 82</string>
+    <string name="Questao82">Given:\n
+        \n
+3. import java.io.*;\n
+4. class Vehicle { }\n
+5. class Wheels { }\n
+6. class Car extends Vehicle implements Serializable { }\n
+7. class Ford extends Car { }\n
+8. class Dodge extends Car {\n
+9. Wheels w = new Wheels();\n
+10. }\n
+\n
+Instances of which class(es) can be serialized? (Choose all that apply.)</string>
+    <string name="questao82A">A. Car</string>
+    <string name="questao82B">B. Ford</string>
+    <string name="questao82C">C. Dodge</string>
+    <string name="questao82D">D. Wheels</string>
+    <string name="questao82E">E. Vehicle</string>
+    <string name="RespostaQuestao82">Answer:\n
+        \n
+A and B are correct. Dodge instances cannot be serialized because they "have" an instance
+of Wheels, which is not serializable. Vehicle instances cannot be serialized even though the
+subclass Car can be.
+    \n
+C, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao83">Question 83</string>
+    <string name="Questao83">Given:\n
+        \n
+3. import java.text.*;\n
+4. public class Slice {\n
+5. public static void main(String[] args) {\n
+6. String s = "987.123456";\n
+7. double d = 987.123456d;\n
+8. NumberFormat nf = NumberFormat.getInstance();\n
+9. nf.setMaximumFractionDigits(5);\n
+10. System.out.println(nf.format(d) + " ");\n
+11. try {\n
+12. System.out.println(nf.parse(s));\n
+13. } catch (Exception e) { System.out.println("got exc"); }\n
+14. }\n
+15. }\n
+\n
+Which are true? (Choose all that apply.)</string>
+    <string name="questao83A">A. The output is 987.12345 987.12345</string>
+    <string name="questao83B">B. The output is 987.12346 987.12345</string>
+    <string name="questao83C">C. The output is 987.12345 987.123456</string>
+    <string name="questao83D">D. The output is 987.12346 987.123456</string>
+    <string name="questao83E">E. The try/catch block is unnecessary</string>
+    <string name="questao83F">F. The code compiles and runs without exception</string>
+    <string name="questao83G">G. The invocation of parse() must be placed within a try/catch block</string>
+    <string name="RespostaQuestao83">Answer:\n
+        \n
+D, F, and G are correct. The setMaximumFractionDigits() applies to the formatting
+but not the parsing. The try/catch block is placed appropriately. This one might scare you
+into thinking that you\'ll need to memorize more than you really do. If you can remember
+that you\'re formatting the number and parsing the string you should be fine for the exam.
+    \n
+A, B, C, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao84">Question 84</string>
+    <string name="Questao84">Given:\n
+        \n
+3. import java.util.regex.*;\n
+4. public class Archie {\n
+5. public static void main(String[] args) {\n
+6. Pattern p = Pattern.compile(args[0]);\n
+7. Matcher m = p.matcher(args[1]);\n
+8. int count = 0;\n
+9. while(m.find())\n
+10. count++;\n
+11. System.out.print(count);\n
+12. }\n
+13. }\n
+\n
+And given the command line invocation:\n
+\n
+java Archie "\d+" ab2c4d67\n
+\n
+What is the result?</string>
+    <string name="questao84A">A. 0</string>
+    <string name="questao84B">B. 3</string>
+    <string name="questao84C">C. 4</string>
+    <string name="questao84D">D. 8</string>
+    <string name="questao84E">E. 9</string>
+    <string name="questao84F">F. Compilation fails</string>
+    <string name="RespostaQuestao84">Answer:\n
+        \n
+B is correct. The "\d" metacharacter looks for digits, and the + quantifier says look for
+"one or more" occurrences. The find() method will find three sets of one or more consecutive
+digits: 2, 4, and 67.
+    \n
+A, C, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao85">Question 85</string>
+    <string name="Questao85">Given:\n
+        \n
+3. import java.util.*; \n
+4. public class Looking {\n
+5. public static void main(String[] args) {\n
+6. String input = "1 2 a 3 45 6";\n
+7. Scanner sc = new Scanner(input);\n
+8. int x = 0;\n
+9. do {\n
+10. x = sc.nextInt();\n
+11. System.out.print(x + " ");\n
+12. } while (x!=0);\n
+13. }\n
+14. }\n
+\n
+What is the result?</string>
+    <string name="questao85A">A. 1 2</string>
+    <string name="questao85B">B. 1 2 3 45 6</string>
+    <string name="questao85C">C. 1 2 3 4 5 6</string>
+    <string name="questao85D">D. 1 2 a 3 45 6</string>
+    <string name="questao85E">E. Compilation fails</string>
+    <string name="questao85F">F. 1 2 followed by an exception</string>
+    <string name="RespostaQuestao85">Answer:\n
+        \n
+F is correct. The nextXxx() methods are typically invoked after a call to a hasNextXxx(),
+which determines whether the next token is of the correct type.
+    \n
+A, B, C, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao86">Question 86</string>
+    <string name="Questao86">Given:\n
+        \n
+<![CDATA[public static void main(String[] args) {\n
+// INSERT DECLARATION HERE\n
+for (int i = 0; i <= 10; i++) {\n
+List<Integer> row = new ArrayList<Integer>();\n
+for (int j = 0; j <= 10; j++)\n
+row.add(i * j);\n
+table.add(row);\n
+}\n
+for (List<Integer> row : table)\n
+System.out.println(row);\n
+}\n
+\n
+Which statements could be inserted at // INSERT DECLARATION HERE to allow this code to
+compile and run? (Choose all that apply.)]]>
+    </string>
+    <string name="questao86A">A. <![CDATA[List<List<Integer>> table = new List<List<Integer>>();]]></string>
+    <string name="questao86B">B. <![CDATA[List<List<Integer>> table = new ArrayList<List<Integer>>();]]></string>
+    <string name="questao86C">C. <![CDATA[List<List<Integer>> table = new ArrayList<ArrayList<Integer>>();]]></string>
+    <string name="questao86D">D. <![CDATA[List<List, Integer> table = new List<List, Integer>();]]></string>
+    <string name="questao86E">E. <![CDATA[List<List, Integer> table = new ArrayList<List, Integer>();]]></string>
+    <string name="questao86F">F. <![CDATA[List<List, Integer> table = new ArrayList<ArrayList, Integer>();]]></string>
+    <string name="questao86G">G. None of the above</string>
+    <string name="RespostaQuestao86">Answer:\n
+        \n
+B is correct.
+    \n
+<![CDATA[A is incorrect because List is an interface, so you can\'t say new List() regardless of
+any generic types. D, E, and F are incorrect because List only takes one type parameter
+(a Map would take two, not a List). C is tempting, but incorrect. The type argument
+<List<Integer>> must be the same for both sides of the assignment, even though the
+constructor new ArrayList() on the right side is a subtype of the declared type List on
+the left.]]>
+    </string>
+    <string name="title_activity_questao87">Question 87</string>
+    <string name="Questao87">Which statements are true about comparing two instances of the same class, given that the
+equals() and hashCode() methods have been properly overridden? (Choose all that apply.):\n
+        \n</string>
+    <string name="questao87A">A. If the equals() method returns true, the hashCode() comparison == might return false</string>
+    <string name="questao87B">B. If the equals() method returns false, the hashCode() comparison == might return true</string>
+    <string name="questao87C">C. If the hashCode() comparison == returns true, the equals() method must return true</string>
+    <string name="questao87D">D. If the hashCode() comparison == returns true, the equals() method might return true</string>
+    <string name="questao87E">E. If the hashCode() comparison != returns true, the equals() method might return true</string>
+    <string name="RespostaQuestao87">Answer:\n
+        \n
+B and D. B is true because often two dissimilar objects can return the same hashcode
+value. D is true because if the hashCode() comparison returns ==, the two objects might
+or might not be equal.
+    \n
+A, C, and E are incorrect. C is incorrect because the hashCode() method is very flexible
+in its return values, and often two dissimilar objects can return the same hash code value.
+A and E are a negation of the hashCode() and equals() contract.</string>
+    <string name="title_activity_questao88">Question 88</string>
+    <string name="Questao88">Given:\n
+        \n
+public static void before() {\n
+Set set = new TreeSet();\n
+set.add("2");\n
+set.add(3);\n
+set.add("1");\n
+Iterator it = set.iterator();\n
+while (it.hasNext())\n
+System.out.print(it.next() + " ");\n
+}\n
+\n
+Which statements are true?</string>
+    <string name="questao88A">A. The before() method will print 1 2</string>
+    <string name="questao88B">B. The before() method will print 1 2 3</string>
+    <string name="questao88C">C. The before() method will print three numbers, but the order cannot be determined</string>
+    <string name="questao88D">D. The before() method will not compile</string>
+    <string name="questao88E">E. The before() method will throw an exception at runtime</string>
+    <string name="RespostaQuestao88">Answer:\n
+        \n
+E is correct. You can\'t put both Strings and ints into the same TreeSet. Without generics,
+the compiler has no way of knowing what type is appropriate for this TreeSet, so it allows
+everything to compile. At runtime, the TreeSet will try to sort the elements as they\'re
+added, and when it tries to compare an Integer with a String it will throw a
+ClassCastException. Note that although the before() method does not use generics,
+it does use autoboxing. Watch out for code that uses some new features and some old
+features mixed together.
+    \n
+A, B, C, and D are incorrect based on the above.</string>
+    <string name="title_activity_questao89">Question 89</string>
+    <string name="Questao89">Given:\n
+        \n
+<![CDATA[import java.util.*;\n
+class MapEQ {\n
+public static void main(String[] args) {\n
+Map<ToDos, String> m = new HashMap<ToDos, String>();\n
+ToDos t1 = new ToDos("Monday");\n
+ToDos t2 = new ToDos("Monday");\n
+ToDos t3 = new ToDos("Tuesday");\n
+m.put(t1, "doLaundry");\n
+m.put(t2, "payBills");\n
+m.put(t3, "cleanAttic");\n
+System.out.println(m.size());\n
+} }\n
+class ToDos{\n
+String day;\n
+ToDos(String d) { day = d; }\n
+public boolean equals(Object o) {\n
+return ((ToDos)o).day == this.day;\n
+}\n
+// public int hashCode() { return 9; }\n]]>
+}\n
+\n
+Which is correct? (Choose all that apply.)</string>
+    <string name="questao89A">A. As the code stands it will not compile</string>
+    <string name="questao89B">B. As the code stands the output will be 2</string>
+    <string name="questao89C">C. As the code stands the output will be 3</string>
+    <string name="questao89D">D. If the hashCode() method is uncommented the output will be 2</string>
+    <string name="questao89E">E. If the hashCode() method is uncommented the output will be 3</string>
+    <string name="questao89F">F. If the hashCode() method is uncommented the code will not compile</string>
+    <string name="RespostaQuestao89">Answer:\n
+        \n
+C and D are correct. If hashCode() is not overridden then every entry will go into its own
+bucket, and the overridden equals() method will have no effect on determining equivalency.
+If hashCode() is overridden, then the overridden equals() method will view t1 and
+t2 as duplicates.
+    \n
+A, B, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao90">Question 90</string>
+    <string name="Questao90">Given:\n
+        \n
+3. import java.util.*;\n
+4. class Business { }\n
+5. class Hotel extends Business { }\n
+6. class Inn extends Hotel { }\n
+7. public class Travel {\n
+8. <![CDATA[ArrayList<Hotel>]]> go() {\n
+9. // insert code here\n
+10. }\n
+11. }\n
+\n
+Which, inserted independently at line 9, will compile? (Choose all that apply.)</string>
+    <string name="questao90A">A. <![CDATA[return new ArrayList<Inn>()]]>;</string>
+    <string name="questao90B">B. <![CDATA[return new ArrayList<Hotel>()]]>;</string>
+    <string name="questao90C">C. <![CDATA[return new ArrayList<Object>()]]>;</string>
+    <string name="questao90D">D. <![CDATA[return new ArrayList<Business>()]]>;</string>
+    <string name="RespostaQuestao90">Answer:\n
+        \n
+B is correct.
+    \n
+A is incorrect because polymorphic assignments don\'t apply to generic type parameters. C
+and D are incorrect because they don\'t follow basic polymorphism rules.</string>
+    <string name="title_activity_questao91">Question 91</string>
+    <string name="Questao91">Given:\n
+        \n
+3. import java.util.*;\n
+4. class Turtle {\n
+5. int size;\n
+6. public Turtle(int s) { size = s; }\n
+7. public boolean equals(Object o) { return (this.size == ((Turtle)o).size); }\n
+8. // insert code here\n
+9. }\n
+10. public class TurtleTest {\n
+11. public static void main(String[] args) {\n
+12. <![CDATA[LinkedHashSet<Turtle> t = new LinkedHashSet<Turtle>]]>();\n
+13. t.add(new Turtle(1)); t.add(new Turtle(2)); t.add(new Turtle(1));\n
+14. System.out.println(t.size());\n
+15. }\n
+16. }\n
+\n
+And these two fragments:\n
+\n
+I. public int hashCode() { return size/5; }\n
+II. // no hashCode method declared\n
+\n
+If fragment I or II is inserted, independently, at line 8, which are true? (Choose all that apply.)</string>
+    <string name="questao91A">A. If fragment I is inserted, the output is 2</string>
+    <string name="questao91B">B. If fragment I is inserted, the output is 3</string>
+    <string name="questao91C">C. If fragment II is inserted, the output is 2</string>
+    <string name="questao91D">D. If fragment II is inserted, the output is 3</string>
+    <string name="questao91E">E. If fragment I is inserted, compilation fails</string>
+    <string name="questao91F">F. If fragment II is inserted, compilation fails</string>
+    <string name="RespostaQuestao91">Answer:\n
+        \n
+A and D are correct. While fragment II wouldn\’t fulfill the hashCode() contract (as you
+can see by the results), it is legal Java. For the purpose of the exam, if you don\’t override
+hashCode(), every object will have a unique hashcode.
+    \n
+B, C, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao92">Question 92</string>
+    <string name="Questao92">Given:\n
+        \n
+3. import java.util.*;\n
+4. class Dog { int size; Dog(int s) { size = s; } }\n
+5. public class FirstGrade {\n
+6. public static void main(String[] args) {\n
+7. 
+<![CDATA[TreeSet<Integer> i = new TreeSet<Integer>();\n
+8. TreeSet<Dog> d = new TreeSet<Dog>()]]>
+;\n
+9.\n
+10. d.add(new Dog(1)); d.add(new Dog(2)); d.add(new Dog(1));\n
+11. i.add(1); i.add(2); i.add(1);\n
+12. System.out.println(d.size() + " " + i.size());\n
+13. }\n
+14. }\n
+\n
+What is the result?</string>
+    <string name="questao92A">A. 1 2</string>
+    <string name="questao92B">B. 2 2</string>
+    <string name="questao92C">C. 2 3</string>
+    <string name="questao92D">D. 3 2</string>
+    <string name="questao92E">E. 3 3</string>
+    <string name="questao92F">F. Compilation fails</string>
+    <string name="questao92G">G. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao92">Answer:\n
+        \n
+G is correct. Class Dog needs to implement Comparable in order for a TreeSet (which
+keeps its elements sorted) to be able to contain Dog objects.
+    \n
+A, B, C, D, E, and F are incorrect based on the above.</string>
+    <string name="title_activity_questao93">Question 93</string>
+    <string name="Questao93">Which are true about a static nested class? (Choose all that apply.)\n</string>
+    <string name="questao93A">A. You must have a reference to an instance of the enclosing class in order to instantiate it</string>
+    <string name="questao93B">B. It does not have access to non-static members of the enclosing class</string>
+    <string name="questao93C">C. Its variables and methods must be static</string>
+    <string name="questao93D">D. If the outer class is named MyOuter, and the nested class is named MyInner, it can be
+instantiated using new MyOuter.MyInner();</string>
+    <string name="questao93E">E. It must extend the enclosing class</string>
+    <string name="RespostaQuestao93">Answer:\n
+        \n
+B and D. B is correct because a static nested class is not tied to an instance of the
+enclosing class, and thus can\'t access the non-static members of the class (just as a
+static method can\'t access non-static members of a class). D uses the correct syntax
+for instantiating a static nested class.
+    \n
+A is incorrect because static nested classes do not need (and can\'t use) a reference to an
+instance of the enclosing class. C is incorrect because static nested classes can declare and
+define non-static members. E is wrong because…it just is. There\'s no rule that says an
+inner or nested class has to extend anything.</string>
+    <string name="title_activity_questao94">Question 94</string>
+    <string name="Questao94">Given:\n
+        \n
+        class Boo {\n
+Boo(String s) { }\n
+Boo() { }\n
+}\n
+class Bar extends Boo {\n
+Bar() { }\n
+Bar(String s) {super(s);}\n
+void zoo() {\n
+// insert code here\n
+}\n
+}\n
+\n
+Which create an anonymous inner class from within class Bar? (Choose all that apply.)</string>
+    <string name="questao94A">A. Boo f = new Boo(24) { };</string>
+    <string name="questao94B">B. Boo f = new Bar() { };</string>
+    <string name="questao94C">C. Boo f = new Boo() {String s; };</string>
+    <string name="questao94D">D. Bar f = new Boo(String s) { };</string>
+    <string name="questao94E">E. Boo f = new Boo.Bar(String s) { };</string>
+    <string name="RespostaQuestao94">Answer:\n
+        \n
+B and C. B is correct because anonymous inner classes are no different from any other
+class when it comes to polymorphism. That means you are always allowed to declare a
+reference variable of the superclass type and have that reference variable refer to an
+instance of a subclass type, which in this case is an anonymous subclass of Bar. Since Bar
+is a subclass of Boo, it all works. C uses correct syntax for creating an instance of Boo.
+    \n
+A is incorrect because it passes an int to the Boo constructor, and there is no matching
+constructor in the Boo class. D is incorrect because it violates the rules of polymorphism;
+you cannot refer to a superclass type using a reference variable declared as the subclass
+type. The superclass doesn\'t have everything the subclass has. E uses incorrect syntax.</string>
+    <string name="title_activity_questao95">Question 95</string>
+    <string name="Questao95">Which are true about a method-local inner class? (Choose all that apply.)\n</string>
+    <string name="questao95A">A. It must be marked final</string>
+    <string name="questao95B">B. It can be marked abstract</string>
+    <string name="questao95C">C. It can be marked public</string>
+    <string name="questao95D">D. It can be marked static</string>
+    <string name="questao95E">E. It can access private members of the enclosing class</string>
+    <string name="RespostaQuestao95">Answer:\n
+        \n
+B and E. B is correct because a method-local inner class can be abstract, although it
+means a subclass of the inner class must be created if the abstract class is to be used (so
+an abstract method-local inner class is probably not useful). E is correct because a
+method-local inner class works like any other inner class—it has a special relationship to
+an instance of the enclosing class, thus it can access all members of the enclosing class.
+    \n
+A is incorrect because a method-local inner class does not have to be declared final
+(although it is legal to do so). C and D are incorrect because a method-local inner class
+cannot be made public (remember—local variables can\'t be public) or static.</string>
+    <string name="title_activity_questao96">Question 96</string>
+    <string name="Questao96">Given:\n
+        \n
+       1. public class TestObj {\n
+2. public static void main(String[] args) {\n
+3. Object o = new Object() {\n
+4. public boolean equals(Object obj) {\n
+5. return true;\n
+6. }\n
+7. }\n
+8. System.out.println(o.equals("Fred"));\n
+9. }\n
+10. }\n
+\n
+What is the result?</string>
+    <string name="questao96A">A. An exception occurs at runtime</string>
+    <string name="questao96B">B. true</string>
+    <string name="questao96C">C. fred</string>
+    <string name="questao96D">D. Compilation fails because of an error on line 3</string>
+    <string name="questao96E">E. Compilation fails because of an error on line 4</string>
+    <string name="questao96F">F. Compilation fails because of an error on line 8</string>
+    <string name="questao96G">G. Compilation fails because of an error on a line other than 3, 4, or 8</string>
+    <string name="RespostaQuestao96">Answer:\n
+        \n
+G. This code would be legal if line 7 ended with a semicolon. Remember that line 3 is a
+statement that doesn\'t end until line 7, and a statement needs a closing semicolon!
+    \n
+A, B, C, D, E, and F are incorrect based on the program logic described above. If the
+semicolon were added at line 7, then answer B would be correct—the program would
+print true, the return from the equals() method overridden by the anonymous
+subclass of Object.</string>
+    <string name="title_activity_questao97">Question 97</string>
+    <string name="Questao97">Given:\n
+        \n
+      3. public class Tour {\n
+4. public static void main(String[] args) {\n
+5. Cathedral c = new Cathedral();\n
+6. // insert code here\n
+7. s.go();\n
+8. }\n
+9. }\n
+10. class Cathedral {\n
+11. class Sanctum {\n
+12. void go() { System.out.println("spooky"); }\n
+13. }\n
+14. }\n
+\n
+Which, inserted independently at line 6, compile and produce the output "spooky"? (Choose all
+that apply.)</string>
+    <string name="questao97A">A. Sanctum s = c.new Sanctum();</string>
+    <string name="questao97B">B. c.Sanctum s = c.new Sanctum();</string>
+    <string name="questao97C">C. c.Sanctum s = Cathedral.new Sanctum();</string>
+    <string name="questao97D">D. Cathedral.Sanctum s = c.new Sanctum();</string>
+    <string name="questao97E">E. Cathedral.Sanctum s = Cathedral.new Sanctum();</string>
+    <string name="RespostaQuestao97">Answer:\n
+        \n
+D is correct. It is the only code that uses the correct inner class instantiation syntax.
+    \n
+A, B, C, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao98">Question 98</string>
+    <string name="Questao98">Given:\n
+        \n
+    5. class A { void m() { System.out.println("outer"); } } \n
+6. \n
+7. public class TestInners { \n
+8. public static void main(String[] args) { \n
+9. new TestInners().go(); \n
+10. } \n
+11. void go() { \n
+12. new A().m(); \n
+13. class A { void m() { System.out.println("inner"); } } \n
+14. } \n
+15. class A { void m() { System.out.println("middle"); } } \n
+16. } \n
+\n
+What is the result?</string>
+    <string name="questao98A">A. inner</string>
+    <string name="questao98B">B. outer</string>
+    <string name="questao98C">C. middle</string>
+    <string name="questao98D">D. Compilation fails</string>
+    <string name="questao98E">E. An exception is thrown at runtime</string>
+    <string name="RespostaQuestao98">Answer:\n
+        \n
+C is correct. The "inner" version of class A isn\'t used because its declaration comes
+after the instance of class A is created in the go() method.
+    \n
+A, B, D, and E are incorrect based on the above.</string>
+    <string name="title_activity_questao99">Question 99</string>
+    <string name="Questao99">The following block of code creates a Thread using a Runnable target:\n
+        \n
+   Runnable target = new MyRunnable();\n
+Thread myThread = new Thread(target);\n
+\n
+Which of the following classes can be used to create the target, so that the preceding code
+compiles correctly?</string>
+    <string name="questao99A">A. public class MyRunnable extends Runnable{public void run(){}}</string>
+    <string name="questao99B">B. public class MyRunnable extends Object{public void run(){}}</string>
+    <string name="questao99C">C. public class MyRunnable implements Runnable{public void run(){}}</string>
+    <string name="questao99D">D. public class MyRunnable implements Runnable{void run(){}}</string>
+    <string name="questao99E">E. public class MyRunnable implements Runnable{public void start(){}}</string>
+    <string name="RespostaQuestao99">Answer:\n
+        \n
+C is correct. The class implements the Runnable interface with a legal run() method.
+    \n
+A is incorrect because interfaces are implemented, not extended. B is incorrect because
+even though the class has a valid public void run() method, it does not implement
+the Runnable interface. D is incorrect because the run() method must be public. E is
+incorrect because the method to implement is run(), not start().</string>
+    <string name="title_activity_questao100">Question 100</string>
+    <string name="Questao100">Given:\n
+       3. class MyThread extends Thread {\n
+4. public static void main(String [] args) {\n
+5. MyThread t = new MyThread();\n
+6. Thread x = new Thread(t);\n
+7. x.start();\n
+8. }\n
+9. public void run() {\n
+10. <![CDATA[for(int i=0;i<3;++i)]]> {\n
+11. System.out.print(i + "..");\n
+12. } } }\n
+\n
+What is the result of this code?</string>
+    <string name="questao100A">A. Compilation fails</string>
+    <string name="questao100B">B. 1..2..3..</string>
+    <string name="questao100C">C. 0..1..2..3..</string>
+    <string name="questao100D">D. 0..1..2..</string>
+    <string name="questao100E">E. An exception occurs at runtime</string>
+    <string name="RespostaQuestao100">Answer:\n
+        \n
+D is correct. The thread MyThread will start and loop three times (from 0 to 2).
+    \n
+A is incorrect because the Thread class implements the Runnable interface; therefore,
+in line 5, Thread can take an object of type Thread as an argument in the constructor
+(this is NOT recommended). B and C are incorrect because the variable i in the for
+loop starts with a value of 0 and ends with a value of 2. E is incorrect based on the above.</string>
+    <string name="title_activity_questao101">Question 101</string>
+	<string name="Questao101">Assume you have a class that holds two private variables: a and b. Which of the following
+pairs can prevent concurrent access problems in that class? (Choose all that apply.)\n
+</string>
+    <string name="questao101A">A. public int read(){return a+b;}\n
+public void set(int a, int b){this.a=a;this.b=b;}</string>
+    <string name="questao101B">B. public synchronized int read(){return a+b;}\n
+public synchronized void set(int a, int b){this.a=a;this.b=b;}</string>
+    <string name="questao101C">C. public int read(){synchronized(a){return a+b;}}\n
+public void set(int a, int b){synchronized(a){this.a=a;this.b=b;}}</string>
+    <string name="questao101D">D. public int read(){synchronized(a){return a+b;}}\n
+public void set(int a, int b){synchronized(b){this.a=a;this.b=b;}}</string>
+    <string name="questao101E">E. public synchronized(this) int read(){return a+b;}\n
+public synchronized(this) void set(int a, int b){this.a=a;this.b=b;}</string>
+    <string name="questao101F">E. public int read(){synchronized(this){return a+b;}}\n
+public void set(int a, int b){synchronized(this){this.a=a;this.b=b;}}</string>
+    <string name="RespostaQuestao101">Answer:\n
+        \n
+B and F are correct. By marking the methods as synchronized, the threads will get the
+lock of the this object before proceeding. Only one thread will be setting or reading at any
+given moment, thereby assuring that read() always returns the addition of a valid pair.
+    \n
+A is incorrect because it is not synchronized; therefore, there is no guarantee that the values
+added by the read() method belong to the same pair. C and D are incorrect; only objects
+can be used to synchronize on. E fails —it is not possible to select other objects (even this)
+to synchronize on when declaring a method as synchronized.</string>
+    <string name="inicio2">Press the button below, and a question will randomly pop up!</string>
+    <string name="inicio3">When you are done, just press back and select a new question!</string>
+    
+</resources>

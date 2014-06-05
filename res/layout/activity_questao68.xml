@@ -1,0 +1,78 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+  <LinearLayout  android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Questao68" />
+    
+        <CheckBox android:id="@+id/checkbox_questao68A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68A"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao68B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68B"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao68C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68C"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao68D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68D"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao68E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68E"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao68F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68F"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao68G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68G"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao68H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao68H"
+        />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/botaoQuestao"
+        android:onClick="abrirResposta"/>
+    
+    <TextView
+        android:id="@+id/RespostaQuestao68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RespostaQuestao68"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
+</ScrollView>

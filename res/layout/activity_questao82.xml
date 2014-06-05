@@ -1,0 +1,61 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+ <LinearLayout  android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Questao82" />
+    
+        <CheckBox android:id="@+id/checkbox_questao82A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao82A"
+        />
+    
+    <CheckBox android:id="@+id/checkbox_questao82B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao82B"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao82C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao82C"
+        />
+   
+    <CheckBox android:id="@+id/checkbox_questao82D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao82D"
+        />
+
+    <CheckBox android:id="@+id/checkbox_questao82E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questao82E"
+        />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="@string/botaoQuestao"
+        android:onClick="abrirResposta"/>
+    
+  
+    <TextView
+        android:id="@+id/RespostaQuestao82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RespostaQuestao82"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
+</ScrollView>

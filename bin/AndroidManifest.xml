@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pratiquejava1z0803"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" /> 
+         <uses-permission android:name="android.permission.INTERNET"/>
+  		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+       <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version"/>
+        
+        <activity
+            android:name="com.pratiquejava1z0803.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao1"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao2"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao3"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao4"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao5"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao6"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao7"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao8"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao9"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao10"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao11"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao12"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao13"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao14"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao15"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao16"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao17"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao18"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao19"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao20"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao21"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao22"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao23"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao24"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao25"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao26"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao27"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao28"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao29"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao30"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao31"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao32"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao33"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao34"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao35"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao36"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao37"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao38"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao39"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao40"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao41"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao42"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao43"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao44"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao45"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao46"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao47"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao48"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao49"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao50"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao51"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao52"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao53"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao54"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao55"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao56"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao57"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao58"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao59"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao60"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao61"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao62"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao63"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao64"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao65"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao66"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao67"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao68"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao69"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao70"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao71"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao72"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao73"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao74"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao75"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao76"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao77"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao78"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao79"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao80"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao81"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao82"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao83"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao84"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao85"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao86"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao87"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao88"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao89"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao90"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao91"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao92"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao93"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao94"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao95"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao96"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao97"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao98"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao99"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao100"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pratiquejava1z0803.Questao101"
+            android:label="@string/title_activity_questao101"
+            android:parentActivityName="com.pratiquejava1z0803.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pratiquejava1z0803.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+    </application>
+   
+
+</manifest>
